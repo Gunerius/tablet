@@ -1,0 +1,14 @@
+BEFORE STARTING|
+1.|Seats|POSITION AND LOCK
+2.|Seat Belts and Shoulder Harnesses|FASTEN AND ADJUST
+3.|Parking Brake|SET|sim/cockpit2/controls/parking_brake_ratio
+4.|All Avionics                                             |OFF
+5.|Landing Gear Handle                                      |DOWN
+6.|Cowl Flap Switches                                       |CHECK, OPEN
+7.|Fuel Selectors                                           |CHECK ON
+8.|All Circuit Breakers, Switches and Equipment Controls    |CHECK
+9.|Battery Switch                                           |ON
+10.|Beacon                                                  |ON
+11.|Fuel Quantity Indicators                                |CHECK QUANTITY
+12.|Landing Gear Position Lights                            |CHECK
+13.|Emergency Landing Gear Handcrank                        |STOWED
