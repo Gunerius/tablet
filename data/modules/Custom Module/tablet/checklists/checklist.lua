@@ -3,9 +3,9 @@
 --include("b58.lua")
 local startY = 400
 
-function drawClist(clistId)
-    for i = 1, #clist[clistId] - 1, 1 do
-        table.insert(components, 2 + i , clickDone {
+function drawClist(clistId, begin, stop)
+    for i = begin, stop, 1 do
+        table.insert(components, 2 + i , drawChecklist {
             position    = {0, startY, 800, 20},
             size        = {800, 20},
             clistNum    = i,
@@ -24,7 +24,12 @@ function drawClist(clistId)
                 hideOSCursor = true
                 }
         })
-        startY = startY - 20
+
+        if #clist[clistId][i+1][2] <= 26 then
+            startY = startY - 25
+        else
+            startY = startY - 50
+        end
     end
 end
 
@@ -34,6 +39,7 @@ function removeClist()
         table.remove(components, i)
     end
 end
+
 
 local state = true
 function update()
@@ -45,7 +51,15 @@ function update()
 
     if get(checklistId) > 0 and state then
         local clistId = get(checklistId)
-        drawClist(clistId)
+        if #clist[clistId] <= 14 then
+            drawClist(clistId, 1, #clist[clistId] - 1)
+        else
+            if get(checklistPage) == 0 then
+                drawClist(clistId, 1, 14)
+            else
+                drawClist(clistId, 1, 5)
+            end
+        end
         state = false
     end
     if get(checklistId) == 0 then
@@ -74,6 +88,21 @@ components = {
         size        = {70, 24},
         chkListName = "BACK",
         chkListNr   = 0,
+        cursor = {
+            x = -16 ,
+            y = -16 ,
+            width = 32 ,
+            height = 32 ,
+            shape = sasl.gl.loadImage ("mc_button.png"),
+            hideOSCursor = true
+            }
+    },
+    buttonChecklist{
+        position    = {650, 10, 70, 24},
+        size        = {70, 24},
+        chkListName = "page",
+        chkListNr   = 0,
+        checklistPage = get(checklistPage),
         cursor = {
             x = -16 ,
             y = -16 ,

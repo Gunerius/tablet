@@ -48,6 +48,34 @@ components = {
             }
     },
     buttonChecklist{
+        position    = {60, 250, 100, 32},
+        size        = {100, 32},
+        chkListName = "After start/TAXI",
+        chkListNr   = 3,
+        cursor = {
+            x = -16 ,
+            y = -16 ,
+            width = 32 ,
+            height = 32 ,
+            shape = sasl.gl.loadImage ("mc_button.png") ,
+            hideOSCursor = true
+            }
+    },
+    buttonChecklist{
+        position    = {60, 200, 100, 32},
+        size        = {100, 32},
+        chkListName = "Before Takeoff",
+        chkListNr   = 4,
+        cursor = {
+            x = -16 ,
+            y = -16 ,
+            width = 32 ,
+            height = 32 ,
+            shape = sasl.gl.loadImage ("mc_button.png") ,
+            hideOSCursor = true
+            }
+    },
+    buttonChecklist{
         position    = {10, 10, 70, 24},
         size        = {70, 24},
         chkListName = "BACK",

@@ -19,9 +19,10 @@
 		addSearchResourcesPath(aircraftPath.."/plugins/REP/data/images/menu")
 		addSearchResourcesPath(XpPath.."/Resources/bitmaps/interface11")
 		addSearchResourcesPath(XpPath.."/Resources/bitmaps/interface")
-
-		require "maximus1Module"
+		
 		include("b58.lua")
+		require "maximus1Module"
+		
 
 
 	components = {

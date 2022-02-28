@@ -102,78 +102,208 @@
                         1
                     },
                     {
-                        "Fuel Boost Pump",
-                        "Switch HI - until fuel flow peaks then OFF",
+                        "Fuel Boost Pump Switch",
+                        "HI - until fuel flow peaks then OFF",
                         "nil",
                         1
                     },
                     {
-                        "Landing Gear Handle" ,
-                        "DOWN",
+                        "Throttle" ,
+                        "CLOSE, THEN OPEN 1/2 INCH",
                         "nil",
                         1
                     },
                     {
-                        "Cowl Flap Switches" ,
-                        "CHECK, OPEN",
+                        "Magneto/Start Switch" ,
+                        "START",
                         "nil",
                         1
                     },
                     {
-                        "Fuel Selectors",
-                        "CHECK ON",
+                        "Throttle",
+                        "900 to 1000RPM after start",
                         "nil",
                         1
                     },
                     {
-                        "All Circuit Breakers, Switches and Equipment Controls",
-                        "CHECK",
+                        "Oil Pressure",
+                        "10 PSI WITHIN 30 SECONDS",
                         "nil",
                         1
                     },
                     {
-                        "Battery Switch",
+                        "Alternator Switch",
                         "ON",
                         "nil",
                          1
                     },
                     {
-                        "Beacon" ,
-                        "ON",
+                        "Loadmeters and Voltmeter" ,
+                        "CHECK FOR BATTERY CHARGE",
                         "nil",
                         1
                     },
                     {
-                        "Fuel Quantity Indicators" ,
-                        "CHECK QUANTITY",
+                        "Voltmeter" ,
+                        "CHECK FOR 28 VOLTS",
                         "nil",
                         1
                     }
-            }
+        },
+        {
+                "After start/TAXI",
+                    {
+                        "Avionics",
+                        "ON, AS REQUIRED",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Exterior Lights",
+                        "AS REQUIRED",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Brakes",
+                        "RELEASE AND CHECK",
+                        "nil",
+                        1
+                    },
+        },
+        {
+                "Before Takeoff",
+                    {
+                        "Parking Brake",
+                        "SET",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Seat Belts and Shoulder Harnesses",
+                        "CHECK",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Fuel Boost",
+                        "Pumps OFF (if OAT > 32°C, use LOW pres boost)",
+                        "nil",
+                        1
+                    },
+                    {
+                        "All Instruments",
+                        "CHECKED",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Fuel Indicators" ,
+                        "QUANTITY INDICATED",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Mixture" ,
+                        "FULL RICH",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Starter Annunciator Light",
+                        "CHECK OFF",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Throttles",
+                        "2200 RPM",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Propeller",
+                        "EXERCISE",
+                        "nil",
+                         1
+                    },
+                    {
+                        "Throttles" ,
+                        "1700 RPM",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Magnetos" ,
+                        "CHECK",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Throttles",
+                        "1500 RPM",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Propellers",
+                        "CHECK FEATHERING",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Throttles",
+                        "IDLE (Note RPM)",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Throttles",
+                        "900 to 1000 RPM",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Electric Trim" ,
+                        "CHECK OPERATION",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Flaps" ,
+                        "CHECK AND SET FOR TAKEOFF",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Flight Controls",
+                        "CHECK",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Elevator Trim",
+                        "Takeoff",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Propeller",
+                        "EXERCISE",
+                        "nil",
+                         1
+                    },
+                    {
+                        "Doors and Windows" ,
+                        "CLOSED AND LOCKED",
+                        "nil",
+                        1
+                    },
+                    {
+                        "Parking Brake" ,
+                        "OFF",
+                        "nil",
+                        1
+                    }
+        }
     }
---[[ 1. Mixture Control FULL RICH
-2. Propeller Control FULL FORWARD
-3. Throttle FULL OPEN
-4. Fuel Boost Pump Switch HI - until fuel flow peaks then OFF
-5. Throttle CLOSE, THEN OPEN 1/2 INCH
-6. Magneto/Start Switch START
-7. Throttle 900 to 1000RPM after start
-8. Oil Pressure 10 PSI WITHIN 30 SECONDS
-9. Alternator Switch ON
-10. Loadmeters and VoltmeterCHECK FOR BATTERY CHARGE
-11. Voltmeter CHECK FOR 28 VOLTS
-
-    STARTING (Repeat for second engine)
-CAUTION
-Do not engage starters for more than 30 seconds in any 4-
-minute period.
-NOTE
-If the engine is hot, and the ambient temperature is 32°C or
-above, place mixture control in IDEL CUT-OFF, switch fuel
-boost pump to HI for 30 to 60 seconds, then OFF. Return
-mixture control to FULL RICH.
-In the event of a balked start (or overprime condition) place
-mixture control in IDLE CUT-OFF and open the throttle;
-operate the starter to remove excess of fuel. As engine starts,
-reduce the throttle to idle rpm and place the mixture control in
-FULL RICH. ]]

@@ -1,10 +1,12 @@
 --tablet.lua
 createGlobalPropertyi("Maximus1/tablet/homescreen", 1, false, true, false)
 createGlobalPropertyi("Maximus1/tablet/page", 0, false, true, false)
+createGlobalPropertyi("Maximus1/tablet/checklist_page", 0, false, true, false)
 defineProperty("checklistId", 0)
 page = globalProperty("Maximus1/tablet/page")
 home = globalProperty("Maximus1/tablet/homescreen")
 avitab = globalProperty("avitab/panel_enabled")
+checklistPage = globalProperty("Maximus1/tablet/checklist_page")
 font1 = sasl.gl.loadFont ("Roboto-Regular.ttf")
 
 --Page 1 = Rep menu
