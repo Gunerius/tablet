@@ -21,6 +21,7 @@
 		addSearchResourcesPath(XpPath.."/Resources/bitmaps/interface")
 
 		require "maximus1Module"
+		include("b58.lua")
 
 
 	components = {

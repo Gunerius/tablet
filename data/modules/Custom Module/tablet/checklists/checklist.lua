@@ -1,9 +1,7 @@
 --checklist.lua
 
-include("b58.lua")
+--include("b58.lua")
 local startY = 400
-
-print(#"Switch HI - until fuel flo")
 
 function drawClist(clistId)
     for i = 1, #clist[clistId] - 1, 1 do
@@ -15,6 +13,8 @@ function drawClist(clistId)
             response    = clist[clistId][i+1][2],
             dataref     = clist[clistId][i+1][3],
             checkedState = clist[clistId][i+1][4],
+            itemNum     = i+1,
+            checklistId = clistId,
             cursor = {
                 x = -16 ,
                 y = -16 ,
