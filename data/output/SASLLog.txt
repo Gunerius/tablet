@@ -12,11 +12,12 @@
 [J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	xpControlsSlider
 [J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	slider
 [J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	checklistMenu
+[J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	buttonChecklistPage
 [J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	buttonChecklist
-[J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	checklist
 [J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	menu
 [J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	bg
 [J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	buttonRep
 [J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	buttonAvitab
 [J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	buttonXpSettings
 [J32 VRMOD BY MAXIMUS1 INFO]: Module loaded
+[J32 VRMOD BY MAXIMUS1 INFO]: [LUA]: loading	drawChecklist
