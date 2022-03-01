@@ -29,7 +29,7 @@ function onMouseDown ( component , x , y , button , parentX , parentY )
         if get(changePage) == 99 then
             sasl.commandOnce(cmdId)
         else
-            set(page, get(changePage))
+            set(tabletApp, get(changePage))
         end
     end
     return true

@@ -5,7 +5,7 @@ function update()
     visible = inMenu
     if inMenu then
         set(avitab, 0)
-        set(page, 0)
+        set(tabletApp, 0)
     end
 end
 

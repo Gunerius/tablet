@@ -2,7 +2,7 @@
 
 --simcoders/rep/walkaround/static_elements/toggle
 function update()
-    if get(page) == 1 then
+    if get(tabletApp) == 1 then
     visible = true
     else
         visible = false

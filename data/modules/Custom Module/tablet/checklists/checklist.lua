@@ -43,7 +43,7 @@ end
 
 local state = true
 function update()
-    if get(page) == 3 and get(checklistId) > 0 then
+    if get(tabletApp) == 3 and get(checklistId) > 0 then
     visible = true
     else
         visible = false
