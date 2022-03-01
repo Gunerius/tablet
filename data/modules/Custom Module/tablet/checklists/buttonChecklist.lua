@@ -1,40 +1,37 @@
-defineProperty("chkListName", "")
-defineProperty("chkListNr", 1)
+defineProperty("buttonName", "")
+defineProperty("chkListNr")
 defineProperty("changePage")
---defineProperty("checklistPage")
+defineProperty("noImage", true)
+defineProperty("fontSize", 22)
+defineProperty("isBold", false)
 
-
-
+local clistNr = globalProperty("Maximus1/tablet/checklistId")
+local btn = globalProperty("Maximus1/tablet/buttonClicked")
 function update()
 
-if get(chkListName) == "page" then
-    if get(checklistId) ~= 0 then
-        if #clist[get(checklistId)] <= 14 then
-            visible = false
-        else
-            visible = true
-        end
-    end
-end 
 end
 
-local btnName = "NEXT PAGE"
+
 local img = sasl.gl.loadImage("checklist.png")
 local font = sasl.gl.loadFont ("Roboto-Regular.ttf")
 
 function onMouseDown(_, _, _, b)
     if b == MB_LEFT then
-        if get(chkListName) == "page" and get(checklistPage) == 0 then
-            set(checklistPage, 1)
-        elseif get(chkListName) == "page" and get(checklistPage) == 1 then
-            set(checklistPage, 0)
-        else 
-            set(checklistId, get(chkListNr))
-            if get(changePage) == 1 then
-                set(page, get(changePage))
-            end
+        if get(buttonName) == "BACK" then
+            set(clistNr, 0)
+            set(btn, 1)
+        elseif get(buttonName) == "NEXT" then
+            print(get(buttonName))
+            set(btn, 1)
+        elseif get(buttonName) == "PREV" then
+            print(get(buttonName))
+            set(btn, 1)
+        else
+            set(clistNr, get(chkListNr))
+            set(btn, 1)
         end
-        
+
+
     end
 end
 
@@ -42,21 +39,13 @@ end
 
 
 function draw()
-    if get(chkListName) == "BACK" then
-        sasl.gl.drawFrame(0, 0, 70, 24, col.white)
-        sasl.gl.drawText(font, 2, 2, get(chkListName), 24, true, false, TEXT_ALIGN_LEFT, col.white)
-    elseif get(chkListName) == "page" then
-        if get(checklistPage) == 0 then
-            btnName = "NEXT PAGE"
-        else
-            btnName = "PREV PAGE"
-        end
-        sasl.gl.drawFrame(0, 0, 120, 20, col.white)
-        sasl.gl.drawText(font, 2, 2, btnName, 20, true, false, TEXT_ALIGN_LEFT, col.white)
+
+    if get(noImage) then
+        sasl.gl.drawFrame(0,0,75,30,col.white)
+        sasl.gl.drawText(font, 5, 5, get(buttonName), get(fontSize), get(isBold), false, TEXT_ALIGN_LEFT, col.white)
     else
-        sasl.gl.drawTexture(img, 0, 0, 32, 32)
-        sasl.gl.drawText(font, 35, 7, get(chkListName), 24, false, false, TEXT_ALIGN_LEFT, col.white)
+        sasl.gl.drawTexture(img, 0, 0, 25,25,col.white)
+        sasl.gl.drawText(font, 25, 3, get(buttonName), get(fontSize), get(isBold), false, TEXT_ALIGN_LEFT, col.white)
     end
 
-    
 end

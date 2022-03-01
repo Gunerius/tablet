@@ -3,7 +3,7 @@ local logo = sasl.gl.loadImage(Custommodule_path.."/textures/xp.png")
 function onMouseDown ( component , x , y , button , parentX , parentY )
     if button == MB_LEFT then
     set(home, 0)
-    set(page, 2)
+    set(tabletApp, 2)
     end
     return true
 end

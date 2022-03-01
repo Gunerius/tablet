@@ -15,7 +15,7 @@ hideOSCursor = true
 local xpBackground = sasl.gl.loadImage("image_background_screenshot_ins.png")
 
 function update()
-    if get(page) == 2 then
+    if get(tabletApp) == 2 then
     visible = true
     else
         visible = false
