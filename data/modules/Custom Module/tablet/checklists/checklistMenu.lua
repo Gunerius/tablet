@@ -1,12 +1,15 @@
 --checklistMenu.lua
+defineProperty("checklistPagination", 0)
 
 local startY = 380
+local startX = 60
 local CONST_numInComponents = 7
 local lineWidth = {1,1,1}
+local n = 1
 
-function drawClist(clistId, stop, clistName)
-    for i = 1, stop - 1, 1 do
-        table.insert(components, i + CONST_numInComponents , drawChecklist {
+function drawClist(clistId, start, stop, clistName)
+    for i = start, stop - 1, 1 do
+        table.insert(components, n + CONST_numInComponents , drawChecklist {
             position    = {0, startY, 800, 20},
             size        = {800, 20},
             clistNum    = i,
@@ -25,23 +28,24 @@ function drawClist(clistId, stop, clistName)
                 hideOSCursor = true
                 }
         })
-
-        if #clistName[clistId][i+1][2] <= 26 then
+        n = n + 1
+        startY = startY - 25
+        --[[ if #clistName[clistId][i+1][2] <= 26 then
             startY = startY - 25
         else
             startY = startY - 50
-        end
+        end ]]
     end
+    n = 1
 end
 
 function drawChecklistButtons(checklist, begin, stop)
-    local j =1
-    for i = begin, stop + begin - 1, 1 do
-        table.insert(components, i , buttonChecklist{
-            position    = {60, startY, 180, 32},
-            size        = {180, 32},
-            buttonName = checklist[i-7][1],
-            chkListNr   = j,
+    for i = 1, stop, 1 do
+        table.insert(components, i + CONST_numInComponents , buttonChecklist{
+            position    = {startX, startY, 300, 32},
+            size        = {300, 32},
+            buttonName = checklist[i][1],
+            chkListNr   = i,
             noImage     = false,
             cursor = {
                 x = -16 ,
@@ -53,8 +57,12 @@ function drawChecklistButtons(checklist, begin, stop)
                 },
         })
             startY = startY - 35
-            j = j + 1
+            if i == 10 then
+                startX = 460
+                startY = 380
+            end
     end
+    startX = 60
 end
 
 
@@ -75,7 +83,15 @@ function update()
 
     if get(checklistPage) == 0 and get(checklistId) == 0 and get(btnClicked) == 1 then
         removeClist()
-        drawChecklistButtons(clist, 8, #clist)
+        print(#clist)
+        --if #clist < 7 then
+            drawChecklistButtons(clist, 8, #clist)
+        --[[ else
+            drawChecklistButtons(clist, 8, 6)
+            startX = 460
+            startY = 380
+            drawChecklistButtons(clist, 14, #clist)
+        end ]]
         startY = 380
         set(btnClicked, 0)
         
@@ -89,17 +105,28 @@ function update()
     if get(checklistId) > 0 and  get(btnClicked) == 1 then
         if get(checklistPage) == 0 then
             removeClist()
-            drawClist(get(checklistId),#clist[get(checklistId)], clist)
+            if #clist[get(checklistId)] <= 13 then
+                drawClist(get(checklistId), 1, #clist[get(checklistId)], clist)
+                startY = 380
+            elseif #clist[get(checklistId)] > 13 and get(checklistPagination) == 0 then
+                drawClist(get(checklistId), 1, 14, clist)
+                startY = 380
+            elseif #clist[get(checklistId)] >= 13 and get(checklistPagination) == 1 then
+                drawClist(get(checklistId), 14, #clist[get(checklistId)], clist)
+                startY = 380
+            end
+
             startY = 380
             set(btnClicked, 0)
+
         elseif get(checklistPage) == 1 then
             removeClist()
-            drawClist(get(checklistId),#clist[get(checklistId)], clistEmer)
+            drawClist(get(checklistId), 1, #clist[get(checklistId)], clistEmer)
             startY = 380
             set(btnClicked, 0)
         end
     end
-
+    updateAll(components)
 end
 
 function draw()

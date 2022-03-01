@@ -4,18 +4,20 @@ createGlobalPropertyi("Maximus1/tablet/page", 0, false, true, false)
 createGlobalPropertyi("Maximus1/tablet/checklist_page", 0, false, true, false)
 createGlobalPropertyi("Maximus1/tablet/checklistId", 0, false, true, false)
 createGlobalPropertyi("Maximus1/tablet/buttonClicked", 1, false, true, false)
-checklistPage = globalProperty("Maximus1/tablet/checklist_page")
-checklistId = globalProperty("Maximus1/tablet/checklistId")
+
+checklistPage = globalProperty("Maximus1/tablet/checklist_page") -- Normal, emergency, references
+checklistId = globalProperty("Maximus1/tablet/checklistId") -- Corresponds to table in b58.lua
 tabletApp = globalProperty("Maximus1/tablet/page")
-home = globalProperty("Maximus1/tablet/homescreen")
-btnClicked = globalProperty("Maximus1/tablet/buttonClicked")
-avitab = globalProperty("avitab/panel_enabled")
-
-font1 = sasl.gl.loadFont ("Roboto-Regular.ttf")
-
 --tabletApp 1 = Rep menu
 --tabletApp 2 = XP setting
 --tabletApp 3 = Checklist
+home = globalProperty("Maximus1/tablet/homescreen")
+btnClicked = globalProperty("Maximus1/tablet/buttonClicked") -- Checks if button is clicked. Used for drawing in checklists.
+avitab = globalProperty("avitab/panel_enabled") -- to start Avitab
+
+font1 = sasl.gl.loadFont ("Roboto-Regular.ttf")
+
+
 
 function update()
     if get(home) == 1 then

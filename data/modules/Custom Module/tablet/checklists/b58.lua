@@ -305,11 +305,356 @@
                         "nil",
                         1
                     }
-        }
+        },
+        {
+            "TAKEOFF",
+                {
+                    "Landing Lights",
+                    "ON",
+                    "nil",
+                    1
+                },
+                {
+                    "Tansponder",
+                    "ALT",
+                    "nil",
+                    1
+                },
+                {
+                    "Takeoff Power",
+                    "Full Throttle, 2700 rpm",
+                    "nil",
+                    1
+                },
+                {
+                    "Minimum Takeoff Oil Temperature",
+                    "24°C",
+                    "nil",
+                    1
+                },
+                {
+                    "Power" ,
+                    "SET TAKEOFF POWER (MIXTURE FULL RICH) BEFORE BRAKE RELEASE",
+                    "nil",
+                    1
+                },
+                {
+                    "Airspeed" ,
+                    "ACCELERATE TO AND MANTAIN RECOMMENDED SPEEDS",
+                    "nil",
+                    1
+                },
+                {
+                    "Landing Gear",
+                    "RETRACT",
+                    "nil",
+                    1
+                },
+                {
+                    "Landing Lights",
+                    "OFF",
+                    "nil",
+                    1
+                },
+                {
+                    "Airspeed",
+                    "ESTABLISH DESIRED CLIMB SPEED",
+                    "nil",
+                     1
+                },
+                {
+                    "Flaps" ,
+                    "RETRACT",
+                    "nil",
+                    1
+                }
+        },
+        {
+            "CRUISE CLIMB",
+                {
+                    "Mixture",
+                    "FULL RICH",
+                    "nil",
+                    1
+                },
+                {
+                    "Cowl Flaps",
+                    "AS REQUIRED",
+                    "nil",
+                    1
+                },
+                {
+                    "POWER",
+                    "FULL THROTTLE",
+                    "nil",
+                    1
+                },
+                {
+                    "Propellers",
+                    "2500 RPM",
+                    "nil",
+                    1
+                },
+                {
+                    "Engine Temperatures" ,
+                    "MONITOR",
+                    "nil",
+                    1
+                },
+                {
+                    "Airspeed" ,
+                    "ACCELERATE TO AND MANTAIN RECOMMENDED SPEEDS",
+                    "nil",
+                    1
+                },
+                {
+                    "Fuel Boost Pumps",
+                    "OFF",
+                    "nil",
+                    1
+                }
+        },
+        {
+            "CRUISE",
+                {
+                    "Cowl Flaps",
+                    "CLOSED",
+                    "nil",
+                    1
+                },
+                {
+                    "POWER",
+                    "SET",
+                    "nil",
+                    1
+                },
+                {
+                    "Fuel Boost Pumps",
+                    "AS REQUIRED",
+                    "nil",
+                    1
+                },
+                {
+                    "Mixtures",
+                    "SET USING EGT",
+                    "nil",
+                    1
+                }
+        },
+        {
+            "DESCENT",
+                {
+                    "Altimeter",
+                    "SET",
+                    "nil",
+                    1
+                },
+                {
+                    "Mixture",
+                    "FULL SET",
+                    "nil",
+                    1
+                },
+                {
+                    "Cowl Flaps",
+                    "CLOSED",
+                    "nil",
+                    1
+                },
+                {
+                    "Flaps",
+                    "AS REQUIRED",
+                    "nil",
+                    1
+                },
+                {
+                    "Power",
+                    "AS REQUIRED",
+                    "nil",
+                    1
+                }
+        },
+        {
+            "LANDING",
+                {
+                    "Seat Belts and Shoulder Harnesses",
+                    "FASTENED",
+                    "nil",
+                    1
+                },
+                {
+                    "Fuel Selector Valves",
+                    "SELECT FULLER TANK",
+                    "nil",
+                    1
+                },
+                {
+                    "Fuel Boost Pumps",
+                    "OFF, OR LOW AS PER OAT",
+                    "nil",
+                    1
+                },
+                {
+                    "Cowl Flaps",
+                    "AS REQUIRED",
+                    "nil",
+                    1
+                },
+                {
+                    "Mixture Controls",
+                    "FULL RICH",
+                    "nil",
+                    1
+                },
+                {
+                    "FLAPS",
+                    "APPROACH (15°) below 152 kts",
+                    "nil",
+                    1
+                },
+                {
+                    "Landing Gear",
+                    "FULL DOWN below 122 kts",
+                    "nil",
+                    1
+                },
+                {
+                    "Airspeed",
+                    "ESTABLISH NORMAL LANDING APPROACH SPEED",
+                    "nil",
+                    1
+                },
+                {
+                    "Propellers",
+                    "HIGH RPM",
+                    "nil",
+                    1
+                }
+        },
+        {
+            "BALKED LANDING",
+                {
+                    "Propellers",
+                    "HIGH RPM",
+                    "nil",
+                    1
+                },
+                {
+                    "Power",
+                    "MAXIMUM ALLOWABLE",
+                    "nil",
+                    1
+                },
+                {
+                    "Airspeed",
+                    "95 kts",
+                    "nil",
+                    1
+                },
+                {
+                    "Flaps",
+                    "UP",
+                    "nil",
+                    1
+                },
+                {
+                    "Landing Gear",
+                    "UP",
+                    "nil",
+                    1
+                },
+                {
+                    "Cowl Flaps",
+                    "AS REQUIRED",
+                    "nil",
+                    1
+                }
+        },
+        {
+            "AFTER LANDING",
+                {
+                    "Landing and Taxi Lights",
+                    "AS REQUIRED",
+                    "nil",
+                    1
+                },
+                {
+                    "Flaps",
+                    "UP",
+                    "nil",
+                    1
+                },
+                {
+                    "Trim Tabs",
+                    "SET TO ZERO",
+                    "nil",
+                    1
+                },
+                {
+                    "Cowl Flaps",
+                    "OPEN",
+                    "nil",
+                    1
+                },
+                {
+                    "Fuel Boost Pumps",
+                    "AS REQUIRED",
+                    "nil",
+                    1
+                }
+        },
+        {
+            "SHUTDOWN",
+                {
+                    "Parking Brake",
+                    "SET",
+                    "nil",
+                    1
+                },
+                {
+                    "Propellers",
+                    "HIGH RPM",
+                    "nil",
+                    1
+                },
+                {
+                    "Throttles",
+                    "1000 RPM",
+                    "nil",
+                    1
+                },
+                {
+                    "Fuel Boost Pumps",
+                    "OFF",
+                    "nil",
+                    1
+                },
+                {
+                    "Electrical and Avionics Equipment",
+                    "OFF",
+                    "nil",
+                    1
+                },
+                {
+                    "Mixture Controls",
+                    "IDLE CUT-OFF",
+                    "nil",
+                    1
+                },
+                {
+                    "Magneto/Start Switches",
+                    "OFF, AFTER ENGINES STOP",
+                    "nil",
+                    1
+                },
+                {
+                    "Battery and Alternator Switches",
+                    "OFF",
+                    "nil",
+                    1
+                }
+        },
     }
-
-
-
 
     clistEmer = {
         {

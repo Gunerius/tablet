@@ -15,7 +15,7 @@ end
 local responseLen = #get(response)
 local space = 0
 
- for i = 20, 30 do
+ for i = 17, 30 do
     local chkSpace = string.sub(get(response), i, i)
     if chkSpace == " " then
         space = i
@@ -64,16 +64,20 @@ function draw()
         end 
 
     end
-            sasl.gl.drawText(font1, 10, 0, tostring(get(clistNum))..".", 20, false, false, TEXT_ALIGN_LEFT, col.white)
-            sasl.gl.drawText(font1, 40, 0, get(call), 20, false, false, TEXT_ALIGN_LEFT, c2)
-            if responseLen <= 26 then
+    sasl.gl.drawText(font1, 10, 0, tostring(get(clistNum))..".", 20, false, false, TEXT_ALIGN_LEFT, col.white)
+    sasl.gl.drawText(font1, 40, 0, get(call), 20, false, false, TEXT_ALIGN_LEFT, c2)
+    sasl.gl.drawText(font1, 790, 0, get(response), 19, true, false, TEXT_ALIGN_RIGHT, c2)
+
+            --[[ if responseLen <= 26 then
                 sasl.gl.drawText(font1, 520, 0, get(response), 20, false, false, TEXT_ALIGN_LEFT, c2)
             else
                 local response1 = string.sub(get(response), 1, space-1)
                 local response2 = string.sub(get(response), space+1, responseLen)
+                --print(#response2)
+
                 sasl.gl.drawText(font1, 520, 0, response1, 20, false, false, TEXT_ALIGN_LEFT, c2)
-                sasl.gl.drawText(font1, 520, -20, response2, 20, false, false, TEXT_ALIGN_LEFT, c2)
-                sasl.gl.drawLine(520, -22, 790, -22, col.white)
-            end
-            sasl.gl.drawLine(40, -2, 790, 0, col.white)
+                sasl.gl.drawText(font1, 800 - (#response2 * 10 + 50), -20, response2, 20, false, false, TEXT_ALIGN_LEFT, c2)
+                sasl.gl.drawLine(800 - (#response2 * 10 + 50), -22, 790, -22, col.white)
+            end ]]
+            sasl.gl.drawLine(40, -2, 790, -2, col.white)
 end

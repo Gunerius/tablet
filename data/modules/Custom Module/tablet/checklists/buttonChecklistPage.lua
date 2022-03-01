@@ -11,6 +11,8 @@ function onMouseDown(_,_,_,b)
     if b == MB_LEFT then
         set(checklistPage, get(toPage))
         set(btnClicked, 1)
+
+        set(checklistId, 0)
     end
 end
 

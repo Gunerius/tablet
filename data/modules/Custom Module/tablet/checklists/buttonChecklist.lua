@@ -7,8 +7,19 @@ defineProperty("isBold", false)
 
 local clistNr = globalProperty("Maximus1/tablet/checklistId")
 local btn = globalProperty("Maximus1/tablet/buttonClicked")
+
 function update()
 
+    
+    if get(clistNr) > 0 and (get(buttonName) == "NEXT" or get(buttonName) == "PREV") then
+        if  #clist[get(clistNr)] <= 14 and (get(buttonName) == "NEXT" or get(buttonName) == "PREV") then
+            visible = false
+        else
+            visible = true
+        end
+    elseif get(clistNr) == 0 and (get(buttonName) == "NEXT" or get(buttonName) == "PREV")  then
+        visible = false
+    end
 end
 
 
@@ -18,20 +29,21 @@ local font = sasl.gl.loadFont ("Roboto-Regular.ttf")
 function onMouseDown(_, _, _, b)
     if b == MB_LEFT then
         if get(buttonName) == "BACK" then
+            if get(clistNr) == 0 then
+                set(tabletApp, 1)
+            end
             set(clistNr, 0)
             set(btn, 1)
         elseif get(buttonName) == "NEXT" then
-            print(get(buttonName))
+            set(checklistPagination, 1)
             set(btn, 1)
         elseif get(buttonName) == "PREV" then
-            print(get(buttonName))
+            set(checklistPagination, 0)
             set(btn, 1)
         else
             set(clistNr, get(chkListNr))
             set(btn, 1)
         end
-
-
     end
 end
 
