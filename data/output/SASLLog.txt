@@ -1,0 +1,24 @@
+[REP TABLET BY MAXIMUS1 INFO]: Initializing...
+[REP TABLET BY MAXIMUS1 INFO]: Path to module: D:\sim2/X-Plane 11/Aircraft/Baron B58/plugins/SASL/data/modules/main.lua
+[REP TABLET BY MAXIMUS1 INFO]: Loading module...
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	module
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: including	b58.lua
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	tablet
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	repmenu
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonRepMenu
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	topbar
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	xpmenu
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	checkbox
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	xpControlsSlider
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	slider
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	checklistMenu
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonChecklistPage
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonChecklist
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	menu
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	bg
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonRep
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonAvitab
+[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonXpSettings
+[REP TABLET BY MAXIMUS1 INFO]: Module loaded
+[REP TABLET BY MAXIMUS1 INFO]: Disabling...
+[REP TABLET BY MAXIMUS1 INFO]: SASL plugin stopped...

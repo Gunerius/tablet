@@ -8,8 +8,7 @@ local frameTime = get(globalProperty("sim/operation/misc/frame_rate_period"))
 local go = 1
 
 
-
-function draw()
+function update()
     hour = get(globalProperty("sim/cockpit2/clock_timer/local_time_hours"))
     minutes = get(globalProperty("sim/cockpit2/clock_timer/local_time_minutes"))
     local seconds = get(globalProperty("sim/time/zulu_time_sec"))
@@ -22,6 +21,11 @@ function draw()
     elseif seconds ~= test and go == 0 then
         go = 1
     end
+end
+
+
+function draw()
+    
 
     --print(go)
 

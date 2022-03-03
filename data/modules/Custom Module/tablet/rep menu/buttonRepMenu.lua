@@ -36,6 +36,6 @@ function onMouseDown ( component , x , y , button , parentX , parentY )
 end
 
 function draw()
-    sasl.gl.drawTexture(logo, 0, 20, 100, 100)
+    sasl.gl.drawTexture(logo, 0, 20, 100, 100, col.white)
     sasl.gl.drawText(font1, get(textX), 0, get(btnName), 20, true, false, TEXT_ALIGN_LEFT, col.white)
 end

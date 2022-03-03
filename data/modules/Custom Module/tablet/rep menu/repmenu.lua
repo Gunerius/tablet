@@ -7,6 +7,8 @@ function update()
     else
         visible = false
     end
+
+    updateAll(components)
 end
 
 function draw()

@@ -23,7 +23,7 @@ function update()
     updateAll(components)
 end
 function draw()
-    sasl.gl.drawTexture(xpBackground, 0, 0, 800, 600, {1,1,1,0.3})
+    sasl.gl.drawTexture(xpBackground, 0, 0, 800, 600, {1,1,1,0.5})
     sasl.gl.drawText(font1, 100, 420, "SOUND", 25, true, false, TEXT_ALIGN_LEFT, col.white)
     sasl.gl.drawText(font1, 400, 420, "VR", 25, true, false, TEXT_ALIGN_LEFT, col.white)
     sasl.gl.drawText(font1, 600, 420, "MISC", 25, true, false, TEXT_ALIGN_LEFT, col.white)

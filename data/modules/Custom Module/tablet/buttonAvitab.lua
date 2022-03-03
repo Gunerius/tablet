@@ -11,7 +11,7 @@ function onMouseDown ( avitabbtn , x , y , button , parentX , parentY )
 end
 
 function draw()
-sasl.gl.drawTexture(avitablogo, 0, 30, 160, 160)
+sasl.gl.drawTexture(avitablogo, 0, 30, 160, 160, col.white)
 sasl.gl.drawText(font1, 30, 0, "Avitab", 30, true, false, TEXT_ALIGN_LEFT, col.white)
 
 end

@@ -23,5 +23,5 @@ function onMouseMove(_, x)
 end
 
 function draw()
-    sasl.gl.drawTexture(img, get(dr)*185, 0, 20, 20)
+    sasl.gl.drawTexture(img, get(dr)*185, 0, 20, 20, col.white)
 end

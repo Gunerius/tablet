@@ -40,9 +40,9 @@ end
 function draw()
 
     if get(dr) == 1 then
-        sasl.gl.drawTexturePart(img, 0, -2, 38, 18, 0, 0, 50, 24)
+        sasl.gl.drawTexturePart(img, 0, -2, 38, 18, 0, 0, 50, 24, col.white)
     else
-        sasl.gl.drawTexturePart(img, 0, -2, 38, 18, 0, 48, 50, 24)
+        sasl.gl.drawTexturePart(img, 0, -2, 38, 18, 0, 48, 50, 24, col.white)
     end
         sasl.gl.drawText(font1, get(textX), 0, get(btnName), 20, false, false, TEXT_ALIGN_LEFT, col.white)
 end

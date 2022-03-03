@@ -7,6 +7,7 @@ function update()
         set(avitab, 0)
         set(tabletApp, 0)
     end
+    updateAll(components)
 end
 
 components = {

@@ -14,6 +14,7 @@ function draw()
     sasl.gl.drawCircle(196, 29, 5, true, col.darkgrey)
     sasl.gl.drawText(font1, get(textX), 0, get(btnName), 20, false, false, TEXT_ALIGN_LEFT, col.white)
     drawAll(components)
+    
 end
 
 components = {

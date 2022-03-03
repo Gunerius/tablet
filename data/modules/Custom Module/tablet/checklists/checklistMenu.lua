@@ -2,15 +2,17 @@
 defineProperty("checklistPagination", 0)
 
 local startY = 380
+local CONST_resetStartY = startY
 local startX = 60
 local CONST_numInComponents = 7
 local lineWidth = {1,1,1}
 local n = 1
 
+
 function drawClist(clistId, start, stop, clistName)
     for i = start, stop - 1, 1 do
         table.insert(components, n + CONST_numInComponents , drawChecklist {
-            position    = {0, startY, 800, 20},
+            position    = {0, startY - 30, 800, 20},
             size        = {800, 20},
             clistNum    = i,
             call        = clistName[clistId][i+1][1],
@@ -30,11 +32,6 @@ function drawClist(clistId, start, stop, clistName)
         })
         n = n + 1
         startY = startY - 25
-        --[[ if #clistName[clistId][i+1][2] <= 26 then
-            startY = startY - 25
-        else
-            startY = startY - 50
-        end ]]
     end
     n = 1
 end
@@ -59,7 +56,7 @@ function drawChecklistButtons(checklist, begin, stop)
             startY = startY - 35
             if i == 10 then
                 startX = 460
-                startY = 380
+                startY = CONST_resetStartY
             end
     end
     startX = 60
@@ -83,22 +80,14 @@ function update()
 
     if get(checklistPage) == 0 and get(checklistId) == 0 and get(btnClicked) == 1 then
         removeClist()
-        print(#clist)
-        --if #clist < 7 then
-            drawChecklistButtons(clist, 8, #clist)
-        --[[ else
-            drawChecklistButtons(clist, 8, 6)
-            startX = 460
-            startY = 380
-            drawChecklistButtons(clist, 14, #clist)
-        end ]]
-        startY = 380
+        drawChecklistButtons(clist, 8, #clist)
+        startY = CONST_resetStartY
         set(btnClicked, 0)
         
     elseif get(checklistPage) == 1 and get(checklistId) == 0 and get(btnClicked) == 1 then
         removeClist()
         drawChecklistButtons(clistEmer, 8, #clistEmer)
-        startY = 380
+        startY = CONST_resetStartY
         set(btnClicked, 0)
     end
 
@@ -107,22 +96,22 @@ function update()
             removeClist()
             if #clist[get(checklistId)] <= 13 then
                 drawClist(get(checklistId), 1, #clist[get(checklistId)], clist)
-                startY = 380
+                startY = CONST_resetStartY
             elseif #clist[get(checklistId)] > 13 and get(checklistPagination) == 0 then
                 drawClist(get(checklistId), 1, 14, clist)
-                startY = 380
+                startY = CONST_resetStartY
             elseif #clist[get(checklistId)] >= 13 and get(checklistPagination) == 1 then
                 drawClist(get(checklistId), 14, #clist[get(checklistId)], clist)
-                startY = 380
+                startY = CONST_resetStartY
             end
 
-            startY = 380
+            startY = CONST_resetStartY
             set(btnClicked, 0)
 
         elseif get(checklistPage) == 1 then
             removeClist()
             drawClist(get(checklistId), 1, #clist[get(checklistId)], clistEmer)
-            startY = 380
+            startY = CONST_resetStartY
             set(btnClicked, 0)
         end
     end
@@ -153,6 +142,16 @@ function draw()
         sasl.gl.drawWideLine(21,420,311,420,3, col.white)
         sasl.gl.drawWideLine(311,420,611,420,3, col.white)
         lineWidth = {1,1,3}
+    end
+
+    if get(checklistId) > 0 then
+        if get(checklistPage) == 0 then
+            sasl.gl.drawText(font1, 400, startY, clist[get(checklistId)][1], 22, true, false, TEXT_ALIGN_CENTER, col.white)
+        elseif get(checklistPage) == 1 then
+            sasl.gl.drawText(font1, 400, startY, clistEmer[get(checklistId)][1], 22, true, false, TEXT_ALIGN_CENTER, col.white)
+        elseif get(checklistPage) == 1 then
+            sasl.gl.drawText(font1, 400, startY, "REFERENCES", 22, true, false, TEXT_ALIGN_CENTER, col.white)
+        end
     end
 
     sasl.gl.drawWideLine(0,420,21,420,3, col.white)

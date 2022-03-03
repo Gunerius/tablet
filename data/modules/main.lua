@@ -24,13 +24,11 @@
 		require "maximus1Module"
 		
 
-
 	components = {
 	tablet{
 		position	= {1248, 0, 800, 480},
 		size        = {800, 480}
-	},
-	--temp{}
+	}
 }
 
 
