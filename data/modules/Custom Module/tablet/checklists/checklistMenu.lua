@@ -1,6 +1,7 @@
 --checklistMenu.lua
 defineProperty("checklistPagination", 0)
 
+
 local startY = 380
 local CONST_resetStartY = startY
 local startX = 60
@@ -97,11 +98,20 @@ function update()
             if #clist[get(checklistId)] <= 13 then
                 drawClist(get(checklistId), 1, #clist[get(checklistId)], clist)
                 startY = CONST_resetStartY
-            elseif #clist[get(checklistId)] > 13 and get(checklistPagination) == 0 then
+            elseif #clist[get(checklistId)] > 13 and #clist[get(checklistId)] <=26 and get(checklistPagination) == 0 then
                 drawClist(get(checklistId), 1, 14, clist)
                 startY = CONST_resetStartY
-            elseif #clist[get(checklistId)] >= 13 and get(checklistPagination) == 1 then
+            elseif #clist[get(checklistId)] > 13 and #clist[get(checklistId)] <=26 and get(checklistPagination) == 1 then
                 drawClist(get(checklistId), 14, #clist[get(checklistId)], clist)
+                startY = CONST_resetStartY
+            elseif #clist[get(checklistId)] > 26 and get(checklistPagination) == 0 then
+                drawClist(get(checklistId), 1, 14, clist)
+                startY = CONST_resetStartY
+            elseif #clist[get(checklistId)] > 26 and get(checklistPagination) == 1 then
+                drawClist(get(checklistId), 14, 27, clist)
+                startY = CONST_resetStartY
+            elseif #clist[get(checklistId)] > 26 and get(checklistPagination) == 2 then
+                drawClist(get(checklistId), 27, #clist[get(checklistId)], clist)
                 startY = CONST_resetStartY
             end
 
@@ -110,7 +120,26 @@ function update()
 
         elseif get(checklistPage) == 1 then
             removeClist()
-            drawClist(get(checklistId), 1, #clist[get(checklistId)], clistEmer)
+            --drawClist(get(checklistId), 1, #clistEmer[get(checklistId)], clistEmer)
+            if #clistEmer[get(checklistId)] <= 13 then
+                drawClist(get(checklistId), 1, #clistEmer[get(checklistId)], clistEmer)
+                startY = CONST_resetStartY
+            elseif #clistEmer[get(checklistId)] > 13 and #clistEmer[get(checklistId)] <=26 and get(checklistPagination) == 0 then
+                drawClist(get(checklistId), 1, 14, clistEmer)
+                startY = CONST_resetStartY
+            elseif #clistEmer[get(checklistId)] > 13 and #clistEmer[get(checklistId)] <=26 and get(checklistPagination) == 1 then
+                drawClist(get(checklistId), 14, #clistEmer[get(checklistId)], clistEmer)
+                startY = CONST_resetStartY
+            elseif #clistEmer[get(checklistId)] > 26 and get(checklistPagination) == 0 then
+                drawClist(get(checklistId), 1, 14, clistEmer)
+                startY = CONST_resetStartY
+            elseif #clistEmer[get(checklistId)] > 26 and get(checklistPagination) == 1 then
+                drawClist(get(checklistId), 14, 27, clistEmer)
+                startY = CONST_resetStartY
+            elseif #clistEmer[get(checklistId)] > 26 and get(checklistPagination) == 2 then
+                drawClist(get(checklistId), 27, #clistEmer[get(checklistId)], clistEmer)
+                startY = CONST_resetStartY
+            end
             startY = CONST_resetStartY
             set(btnClicked, 0)
         end
@@ -149,7 +178,7 @@ function draw()
             sasl.gl.drawText(font1, 400, startY, clist[get(checklistId)][1], 22, true, false, TEXT_ALIGN_CENTER, col.white)
         elseif get(checklistPage) == 1 then
             sasl.gl.drawText(font1, 400, startY, clistEmer[get(checklistId)][1], 22, true, false, TEXT_ALIGN_CENTER, col.white)
-        elseif get(checklistPage) == 1 then
+        elseif get(checklistPage) == 2 then
             sasl.gl.drawText(font1, 400, startY, "REFERENCES", 22, true, false, TEXT_ALIGN_CENTER, col.white)
         end
     end
@@ -164,6 +193,21 @@ end
 
 
 components = {
+    activate {
+        position    = {120, 15, 50, 20},
+        size        = {50, 20},
+        dref        = "Maximus1/tablet/autoCheck",
+        btnName     = "Auto checks",
+        textX       = 40,
+        cursor = {
+            x = -16 ,
+            y = -16 ,
+            width = 32 ,
+            height = 32 ,
+            shape = sasl.gl.loadImage ("mc_button.png") ,
+            hideOSCursor = true
+            }
+    },
     buttonChecklistPage{
         position    = {40, 425, 200, 30},
         size        = {200, 30},
@@ -246,8 +290,7 @@ components = {
             height = 32 ,
             shape = sasl.gl.loadImage ("mc_button.png"),
             hideOSCursor = true
-            } 
-    
+            }
     },
     buttonChecklist{
         position    = {600, 10, 75, 30},
@@ -263,30 +306,11 @@ components = {
             height = 32 ,
             shape = sasl.gl.loadImage ("mc_button.png"),
             hideOSCursor = true
-            } 
-    
+            }
     },
     topbar{
         position    = {0, 450, 800, 30},
         size        = {800, 30}
-    },
-    --[[ drawChecklist {
-        position    = {0, 200, 800, 20},
-        size        = {800, 20},
-        clistNum    = 2,
-        call        = clist[1][2][1],
-        response    = clist[1][2][2],
-        dataref     = clist[1][2][3],
-        checkedState = clist[1][2][4],
-        checklistId = 1,
-        cursor = {
-            x = -16 ,
-            y = -16 ,
-            width = 32 ,
-            height = 32 ,
-            shape = sasl.gl.loadImage ("mc_button.png") ,
-            hideOSCursor = true
-            }
-    } ]]
+    }
 }
 

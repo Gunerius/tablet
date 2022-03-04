@@ -5,18 +5,30 @@ defineProperty("noImage", true)
 defineProperty("fontSize", 22)
 defineProperty("isBold", false)
 
+--clistName[clistId][i+1][1]
+
+
+local pages = globalProperty("Maximus1/tablet/checklistNumPages")
 local clistNr = globalProperty("Maximus1/tablet/checklistId")
 local btn = globalProperty("Maximus1/tablet/buttonClicked")
+local numPages = 0
 
 function update()
-
     
-    if get(clistNr) > 0 and (get(buttonName) == "NEXT" or get(buttonName) == "PREV") then
-        if  #clist[get(clistNr)] <= 14 and (get(buttonName) == "NEXT" or get(buttonName) == "PREV") then
-            visible = false
-        else
-            visible = true
+    if get(clistNr) > 0 then
+        if get(checklistPage) == 0 then
+            activeChecklist = clist
+        elseif get(checklistPage) == 1 then
+            activeChecklist = clistEmer
+        elseif get(checklistPage) == 2 then
+            activeChecklist = clist
         end
+        numPages = math.ceil((#activeChecklist[get(clistNr)] - 1) / 13) - 1
+        set(pages, numPages + 1 )
+    end
+
+    if get(clistNr) > 0 and (get(buttonName) == "NEXT" or get(buttonName) == "PREV") then
+            visible = true
     elseif get(clistNr) == 0 and (get(buttonName) == "NEXT" or get(buttonName) == "PREV")  then
         visible = false
     end
@@ -35,11 +47,24 @@ function onMouseDown(_, _, _, b)
             set(clistNr, 0)
             set(btn, 1)
         elseif get(buttonName) == "NEXT" then
-            set(checklistPagination, 1)
-            set(btn, 1)
+            if get(checklistPagination) == numPages then
+                set(clistNr, mm.clamp(get(clistNr) + 1, 1, #activeChecklist))
+                set(checklistPagination, 0)
+                set(btn, 1)
+            else
+                set(checklistPagination, mm.clamp(get(checklistPagination) + 1, 0, numPages))
+                set(btn, 1)  
+            end
+            
         elseif get(buttonName) == "PREV" then
-            set(checklistPagination, 0)
-            set(btn, 1)
+            if get(checklistPagination) == 0 then
+                set(clistNr, mm.clamp(get(clistNr) - 1, 1, #activeChecklist))
+                set(checklistPagination, math.ceil((#activeChecklist[get(clistNr)] - 1) / 13) - 1)
+                set(btn, 1)
+            else
+                set(checklistPagination, mm.clamp(get(checklistPagination) - 1, 0, numPages))
+                set(btn, 1)  
+            end
         else
             set(clistNr, get(chkListNr))
             set(btn, 1)

@@ -1,6 +1,7 @@
 		sasl.options.setAircraftPanelRendering ( true )
 		sasl.options.set3DRendering ( false )
 		sasl.options.setInteractivity ( true )
+		loadedAircraft = sasl.getAircraft()
 		size = {2048, 2048}
 		panelWidth3d = 2048
 		panelHeight3d = 2048
@@ -20,16 +21,37 @@
 		addSearchResourcesPath(XpPath.."/Resources/bitmaps/interface11")
 		addSearchResourcesPath(XpPath.."/Resources/bitmaps/interface")
 		
-		include("b58.lua")
+		
 		require "maximus1Module"
 		
+		
 
+if loadedAircraft == "Baron_58.acf" then
+	size = {2048, 2048}
+	panelWidth3d = 2048
+	panelHeight3d = 2048
+
+	include("b58.lua")
 	components = {
 	tablet{
 		position	= {1248, 0, 800, 480},
 		size        = {800, 480}
 	}
 }
+elseif loadedAircraft == "Car_PC12.acf" then
+	size = {4096, 4096}
+	panelWidth3d = 4096
+	panelHeight3d = 4096
+
+	include("pc12.lua")
+	--print(#clist)
+	components = {
+		tablet{
+			position	= {3296, 0, 800, 480},
+			size        = {800, 480}
+		}
+	}
+end
 
 
 

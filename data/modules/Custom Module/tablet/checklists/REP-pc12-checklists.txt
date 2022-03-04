@@ -1,0 +1,319 @@
+!BEFORE ENGINE START
+1. Pre-Flight Inspection_______Completed
+2. Parking Brake_______Set
+3. Flight Control Lock_______Removed
+4. Pax Oxy Supply_______Auto
+5. Oxygen Mask_______Checked
+6. Circuit Breakers_______Checked
+7. EPS_______Check + Arm
+8. Ldg Gear Handle_______Down
+9. Trim Inter Switch_______Normal
+10. Flap Inter Switch_______Normal
+11. MOR Lever_______Off
+12. PCL Lever_______Idle
+13. Condition Lever_______Cut Off
+14. Flap Lever_______0°
+15. Fuel Emerg Shutoff_______Full In
+16. ECS Emerg Shutoff_______Full In
+17. Doors/DV Windows_______Closed
+18. Battery 1 & 2 Switches_______On
+19. Battery Voltage_______>24V
+20. Avionics 1_______On
+21. ATIS_______Received
+22. Altimeters_______Set
+23. Clearance_______Obtain
+24. Avionics 1_______Off
+25. Beacon/Nav Lights_______On
+NOTE: Avoid prolonged use of the beacon and logo lights (if installed), as this can cause a decrease in battery power and affect the engine starting.
+26. Fuel Pumps_______Audio/Visual Check
+27. Lamp_______Checked
+28. Fire Warning_______Checked
+29. EIS_______Checked
+30. Fuel Contents_______Checked/Set
+!ENGINE START
+1. Prop Area_______Clear
+2. Starter Switch_______Press 2 Seconds
+3. Condition Lever >12%Ng_______Ground Idle
+4. Oil Pressure_______Check
+5. ITT and Ng_______Monitored
+6. Engine Instruments_______Checked
+7. Gen 1 then Gen 2_______On
+8. Inverter_______Batt or Gen
+9. Avionics 1 and 2_______On
+10. Pax Advisory_______On
+11. GPS Flight Plan_______Set
+12. Standby Bus_______OFF
+13. Air Conditioning_______As required
+14. ECS_______Auto
+15. Pressurization_______Set Cruise Alt +500ft
+16. Flaps_______Set 15°
+!BEFORE TAXI
+1. Flaps 15°_______Checked
+2. AHRS_______No Flag
+3. Autopilot_______Checked
+4. Pusher _______Test
+5. CAWS_______Checked
+6. Inertial Separator_______Check Open
+7. De-Ice_______Check (if ice)
+8. Flight Controls_______Free
+9. Trim Set_______+3
+10. Engine Instruments_______Checked
+11. Fuel Quantity_______Re-check
+12. Com/Nav_______Set
+13. EGPWS/Traffic_______Checked
+14. Cabin Pressurization/ECS_______Checked
+15. FD/ALT_______Set
+!TAXI
+1. Taxi Light_______On
+2. Brakes_______Checked
+3. Flight Instruments_______Checked
+BEFORE TAKE-OFF
+1. Take-Off Brief_______Completed
+!LINE UP
+1. Taxi/Ldg + Recog Lights_______On
+2. Strobes_______On
+3. Windshield Heat_______On
+4. Probes_______On
+5. CAWS_______Check Clear
+6. Pressurization/ECS_______Re-Check
+7. Flaps set 15°_______Re-Check
+8. Condition Lever_______Flight Idle
+9. Transponder_______ALT
+
+AFTER TAKE-OFF
+--------------
+
+1. Gear (positive rate)_______Up
+2. Yaw Damper_______On
+3. Taxi/Landing Lights_______Off
+4. Flaps >100 KIAS_______Up
+5. Climb Power Set_______36.9 @ ~150 KIAS
+6. Pressurization_______Check
+
+TRANSITION
+----------
+
+1. Altimeter_______Set 1013
+2. Recog Lights_______Off
+3. Inertial Separator_______Closed (as req)
+4. Pax Advisory_______On
+5. Pressurization_______Check
+6. Clearance_______Obtain
+
+TOP OF CLIMB
+------------
+
+1. Power_______Set
+2. Trend Monitor_______Completed
+
+BEFORE DESCENT
+--------------
+
+1. ATIS_______Received
+2. Briefing_______Completed
+3. Fuel Qty_______Checked
+
+TOP OF DESCENT
+--------------
+
+1. Pressurization_______Set Field Elev + 500ft
+
+TRANSITION
+----------
+
+1. Altimeter_______Set area QNH
+2. Recog Lights_______On
+3. Inertial Separator_______Open (as req)
+4. Pax Advisory_______On
+5. Pressurization_______Check
+
+APPROACH
+--------
+
+1. Altimeter_______Check QNH
+2. Landing Gear_______Down <177 KIAS
+3. Flaps_______As required <163 KIAS
+4. Taxi/Landing Lights_______As Required
+5. WX Radar_______Standby
+
+FINAL
+-----
+
+1. Runway_______Clear
+2. Final approach_______100-120 KIAS - 15°
+3. Runway threshold_______80-100 KIAS - 30° or 40°
+4. Landing Gear_______3 Green
+5. Flaps_______As Required
+6. Yaw Damper_______Off
+
+AFTER LANDING
+-------------
+
+1. Condition Lever_______Ground Idle
+2. Trims_______Reset to Green
+3. Flaps_______Up
+4. Windshield Heat_______Off
+5. Probes_______Off
+6. Strobes_______Off
+7. Landing/Recog Lights_______Off
+
+SHUT-DOWN
+---------
+
+1. Parking Brake_______On
+2. Avionics 1 and 2_______Off
+3. Gen 2 then Gen 1_______Off
+4. ECS_______Off
+5. Condition Lever_______Cut-Off
+6. EPS_______Off
+7. Battery Master_______Off <10%Ng
+
+REJECTED TAKEOFF (NOT ENGINE RELATED)
+-------------------------------------
+
+1. PCL_______Idle
+2. Reverse_______As required
+3. Braking_______As required
+If the aircraft cannot be stopped on the remaining runway:
+
+4. PCL_______Idle
+5. CONDITION LEVER_______CUT-OFF
+6. FUEL EMERG SHUT OFF_______Press latch and pull lever
+7. MASTER POWER switch_______EMERGENCY OFF
+8. After the aircraft has stopped_______Evacuate.
+
+CAUTION
+-------
+
+A REJECTED TAKEOFF MAY CAUSE OVERHEATING OF WHEEL AND BRAKE ASSEMBLY COMPONENTS. THE MAIN WHEELS AND BRAKES SHOULD BE INSPECTED FOR DAMAGE IN ACCORDANCE WITH THE RESPECTIVE COMPONENT MANUALS BEFORE THE NEXT FLIGHT.
+
+
+ENGINE FAILURE BEFORE ROTATION
+------------------------------
+
+1. PCL_______Idle
+2. Braking_______As required
+If runway overrun or collision is likely, then:
+
+3. CONDITION LEVER_______CUT-OFF
+4. FUEL EMERG SHUT OFF_______Press latch and pull lever
+5. MASTER POWER switch_______EMERGENCY OFF
+6. After the aircraft has stopped_______Evacuate.
+
+ENGINE FAILURE AFTER ROTATION - LANDING GEAR DOWN
+-------------------------------------------------
+
+If altitude is not sufficient to select a runway, land straight ahead turning only to avoid obstructions
+
+1. Flaps_______40
+2. Final Approach Speed_______84 KIAS
+3. PCL_______Idle
+4. CONDITION LEVER_______CUT-OFF
+5. FUEL EMERG SHUT OFF_______Press latch and pull lever
+After touch down:
+
+6. MASTER POWER switch_______EMERGENCY OFF
+7. After the aircraft has stopped_______Evacuate.
+
+ENGINE FAILURE AFTER ROTATION - LANDING GEAR UP
+-----------------------------------------------
+
+1. Landing Gear_______DOWN
+2. NON ESS OVRD switch_______NON ESS OVRD (Overhead Panel)
+3. Flaps_______40°
+4. Final Approach Speed_______98 KIAS Flaps 15°
+5. Final Approach Speed_______84 KIAS Flaps 40°
+6. PCL_______Idle
+7. CONDITION LEVER_______CUT-OFF
+8. FUEL EMERG SHUT OFF_______Press latch and pull lever
+After touch down:
+
+9. MASTER POWER switch_______EMERGENCY OFF
+
+ENGINE FAILURE IN FLIGHT - PARTIAL POWER LOSS 1/2
+-------------------------------------------------
+
+Indications: Uncommanded engine power reduction.
+
+No response to PCL movement.
+
+1. PCL_______Idle
+2. Manual Override Lever_______Move slowly forward until engine responds
+If engine compressor stalls and/or ITT exceeded:
+
+3. Manual Override Lever_______Retard and move very slowly forward
+If engine falls below 50% Ng:
+
+4. STARTER switch_______Push for 2 seconds
+
+CAUTION
+-------
+
+WHEN THE STARTER SWITCH IS PUSHED ON AIRCRAFT WITH A SINGLE BATTERY INSTALLED, THE AUTOPILOT MAY DISENGAGE AND THE AHRS AND EFIS MAY GO OFF-LINE.
+
+
+ENGINE FAILURE IN FLIGHT - PARTIAL POWER LOSS 2/2: 1. Manual Override Lever_______Move forward to required power (Ng > 80%)
+2. Land_______as soon as practical.
+
+CAUTION
+-------
+
+WHEN MOR IS IN OPERATION DO NOT PERMIT NG TO FALL BELOW 65% AND OBSERVE ENGINE LIMITATIONS
+
+1. In descent and until touch down_______maintain at least 75% Ng.
+
+WARNING
+-------
+
+DEPENDING ON AIRFIELD CONDITIONS AND AIRCRAFT WEIGHT AND CONFIGURATION, THE AVAILABLE POWER MIGHT NOT BE SUFFICIENT TO ENSURE A GO AROUND.
+
+1. Touch down_______CONDITION LEVER CUT-OFF/FEATHER
+
+CAUTION
+-------
+
+- DO NOT MOVE PCL AFT OF IDLE DETENT.
+
+- TOTAL LANDING DISTANCE IS INCREASED BY A FACTOR OF 2.
+
+- DO NOT USE MOR ON GROUND FOR TAXIING.
+
+
+ENGINE FAILURE IN FLIGHT - TOTAL POWER LOSS
+-------------------------------------------
+
+1. PCL_______Idle
+2. CONDITION LEVER_______CUT-OFF
+3. Remaining fuel_______Check
+If above 13500 ft make an emergency descent
+
+If engine air start is not successful make a forced landing
+
+
+REFERENCE SPEEDS
+----------------
+
+VMO (maximum operating) _______240KIAS
+VNE (never exceed) _______236KIAS
+VD (maximum diving speed) _______280KIAS
+VRE (rotation) _______80KIAS
+Vx (best angle of climb) _______110KIAS
+VY (best rate of climb) _______120 KIAS
+VCLIMB (climb airspeeds)
+
+   0’         160 KIAS
+
+   15,000’    150KIAS
+
+   20,000’    140 KIAS
+
+   25,000’    130KIAS
+
+   30,000’    115KIAS
+
+VA (design maneuvering) _______158 KIAS
+VFE (maximum 15°flaps) _______163KIAS
+VLE (maximum gear extended) _______236 KIAS
+VLO (maximum gear operating) _______177KIAS
+VSI (stall, clean) _______86KIAS
+VSO (stall, landing configuration) _______60 KIAS

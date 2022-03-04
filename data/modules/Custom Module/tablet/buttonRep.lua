@@ -1,6 +1,12 @@
 --buttonRep.lua
 
 local logo = sasl.gl.loadImage(Custommodule_path.."/textures/b58.png")
+if loadedAircraft == "Baron_58.acf" then
+    logo = sasl.gl.loadImage(Custommodule_path.."/textures/b58.png")
+elseif loadedAircraft == "Car_PC12.acf" then
+    logo = sasl.gl.loadImage(Custommodule_path.."/textures/pc12.png")
+end
+
 
 function onMouseDown ( component , x , y , button , parentX , parentY )
     if button == MB_LEFT then
