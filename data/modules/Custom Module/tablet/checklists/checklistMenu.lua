@@ -55,7 +55,7 @@ function drawChecklistButtons(checklist, begin, stop)
                 },
         })
             startY = startY - 35
-            if i == 10 then
+            if i == 8 then
                 startX = 460
                 startY = CONST_resetStartY
             end
@@ -118,7 +118,7 @@ function update()
             startY = CONST_resetStartY
             set(btnClicked, 0)
 
-        elseif get(checklistPage) == 1 then
+        elseif get(checklistPage) == 1 and  get(btnClicked) == 1 then
             removeClist()
             --drawClist(get(checklistId), 1, #clistEmer[get(checklistId)], clistEmer)
             if #clistEmer[get(checklistId)] <= 13 then
@@ -142,7 +142,12 @@ function update()
             end
             startY = CONST_resetStartY
             set(btnClicked, 0)
+
+        elseif get(checklistPage) == 2 and  get(btnClicked) == 1 then
+
         end
+
+        
     end
     updateAll(components)
 end
@@ -183,6 +188,11 @@ function draw()
         end
     end
 
+    if get(checklistId) == 0 then
+        sasl.gl.drawText(font1, 400, 90, "ATTENTION!!! These checklists are abreviated,", 24, false, false, TEXT_ALIGN_CENTER, col.red )
+        sasl.gl.drawText(font1, 400, 65, "please refer to full checklist for comments", 24, false, false, TEXT_ALIGN_CENTER, col.red )
+    end
+
     sasl.gl.drawWideLine(0,420,21,420,3, col.white)
     sasl.gl.drawWideLine(284,420,311,420,3, col.white)
     sasl.gl.drawWideLine(611,420,626,420,3, col.white)
@@ -193,7 +203,11 @@ end
 
 
 components = {
-    activate {
+    topbar{
+        position    = {0, 450, 800, 30},
+        size        = {800, 30}
+    },
+    checklistActivate {
         position    = {120, 15, 50, 20},
         size        = {50, 20},
         dref        = "Maximus1/tablet/autoCheck",
@@ -308,9 +322,6 @@ components = {
             hideOSCursor = true
             }
     },
-    topbar{
-        position    = {0, 450, 800, 30},
-        size        = {800, 30}
-    }
+    
 }
 

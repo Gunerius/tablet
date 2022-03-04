@@ -1,16 +1,4 @@
 --xpmenu.lua
---[[
-    sim/operation/replay_toggle sim/time/is_in_replay
-
-    cursor = {
-x = -8 ,
-y = -8 ,
-width = 30 ,
-height = 30 ,
-shape = sasl.gl.loadImage ( " myFancyCursor.png " ) ,
-hideOSCursor = true
-}
- ]]
 
 local xpBackground = sasl.gl.loadImage("image_background_screenshot_ins.png")
 
@@ -23,7 +11,7 @@ function update()
     updateAll(components)
 end
 function draw()
-    sasl.gl.drawTexture(xpBackground, 0, 0, 800, 600, {1,1,1,0.5})
+    sasl.gl.drawTexture(xpBackground, 0, 0, 800, 600, {1 * get(panelBrightnes),1 * get(panelBrightnes),1 * get(panelBrightnes),0.5})
     sasl.gl.drawText(font1, 100, 420, "SOUND", 25, true, false, TEXT_ALIGN_LEFT, col.white)
     sasl.gl.drawText(font1, 400, 420, "VR", 25, true, false, TEXT_ALIGN_LEFT, col.white)
     sasl.gl.drawText(font1, 600, 420, "MISC", 25, true, false, TEXT_ALIGN_LEFT, col.white)

@@ -7,6 +7,21 @@ defineProperty("dataref", "nil")
 defineProperty("checkedState", 1)
 
 local ac = globalProperty("Maximus1/tablet/autoCheck")
+local panelBrightnes = globalProperty("Maximus1/tablet/panelBrightnes")
+
+local x = get(panelBrightnes)
+
+    col = {
+        white = {1 * x ,1 * x ,1 * x ,1},
+        black = {0.001 * x ,0.001 * x ,0.001 * x ,1},
+        red = {1 * x ,0 * x ,0 * x ,1},
+        green = {0 * x ,1 * x ,0 * x ,1},
+        darkgrey = {0.278 * x ,0.31 * x ,0.349 * x ,1},
+        grey = {0.5 * x ,0.5 * x ,0.5 * x ,1},
+        lightgrey = {0.7 * x ,0.7 * x ,0.7 * x ,1},
+        blue = {0 * x ,0 * x ,1 * x ,1},
+        darkblue = {0 * x ,0.1 * x ,0.15 * x ,1}
+    }
 
 local dref = ""
 if get(dataref) ~= "nil" then
@@ -55,6 +70,21 @@ function onMouseDown(_,_,_, b)
 end
 
 function update()
+
+    local x = get(panelBrightnes)
+
+    col = {
+        white = {1 * x ,1 * x ,1 * x ,1},
+        black = {0.001 * x ,0.001 * x ,0.001 * x ,1},
+        red = {1 * x ,0 * x ,0 * x ,1},
+        green = {0 * x ,1 * x ,0 * x ,1},
+        darkgrey = {0.278 * x ,0.31 * x ,0.349 * x ,1},
+        grey = {0.5 * x ,0.5 * x ,0.5 * x ,1},
+        lightgrey = {0.7 * x ,0.7 * x ,0.7 * x ,1},
+        blue = {0 * x ,0 * x ,1 * x ,1},
+        darkblue = {0 * x ,0.1 * x ,0.15 * x ,1}
+    }
+
    if get(dataref) == "nil" or get(ac) == 0 then
         c2 = c
     elseif get(dataref) ~= "nil" and get(ac) == 1 then
@@ -64,6 +94,7 @@ function update()
             c2 = c
         end
     end
+
 end
 
 function draw()

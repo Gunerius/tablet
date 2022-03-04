@@ -22,12 +22,13 @@ end
 
 
 function draw()
-    
-
-    --print(go)
 
     sasl.gl.drawRectangle(0, 0, 800, 30, {0.1, 0.1, 0.1, 0.8 })
     sasl.gl.drawText(font1, 740, 7, string.format("%02d:%02d", hour, minutes), 20, false, false, TEXT_ALIGN_LEFT, col.white)
     sasl.gl.drawText(font1, -20, 7, string.format("%12d FPS", 1 / frameTime), 20, false, false, TEXT_ALIGN_LEFT, col.white)
 end
 
+
+components = {
+
+}

@@ -12,6 +12,7 @@
 
 		addSearchPath(Custommodule_path.."/textures")
 		addSearchPath(Custommodule_path.."/tablet")
+		addSearchPath(Custommodule_path.."/tablet/topbar")
 		addSearchPath(Custommodule_path.."/tablet/checklists")
 		addSearchPath(Custommodule_path.."/tablet/rep menu")
 		addSearchPath(Custommodule_path.."/tablet/xp settings")

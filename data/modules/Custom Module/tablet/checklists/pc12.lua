@@ -2,1244 +2,1039 @@
     clist = {
         {
             "BEFORE ENGINE START",
-                --1
-                {
-                        "Pre-Flight Inspection",
-                        "POSITION AND LOCK",
-                        "nil",
-                        1
+            {
+                "Pre-Flight Inspection",
+                "Completed",
+                "nil",
+                1
                 },
-                --2
                 {
-                        "Parking Brake",
-                        "FASTEN AND ADJUST",
-                        "nil",
-                        1
+                "Parking Brake",
+                "Set",
+                "nil",
+                1
                 },
-                --3
                 {
-                        "Flight Control Lock",
-                        "SET",
-                        "sim/cockpit2/controls/parking_brake_ratio",
-                        1
+                "Flight Control Lock",
+                "Removed",
+                "nil",
+                1
                 },
-                --4
                 {
-                        "Pax Oxy Supply",
-                        "OFF",
-                        "sim/cockpit/electrical/avionics_on",
-                        0
+                "Pax Oxy Supply",
+                "Auto",
+                "nil",
+                1
                 },
-                --5
                 {
-                        "Oxygen Mask" ,
-                        "DOWN",
-                        "sim/cockpit/switches/gear_handle_status",
-                        1
+                "Oxygen Mask",
+                "Checked",
+                "nil",
+                1
                 },
-                --6
                 {
-                        "Circuit Breakers" ,
-                        "CHECK, OPEN",
-                        "nil",
-                        1
+                "Circuit Breakers",
+                "Checked",
+                "nil",
+                1
                 },
-                --7
                 {
-                        "EPS",
-                        "CHECK + ARM",
-                        "nil",
-                        1
+                "EPS",
+                "Check + Arm",
+                "nil",
+                1
                 },
-                --8
                 {
-                        "Ldg Gear Handle",
-                        "DOWN",
-                        "nil",
-                        1
+                "Ldg Gear Handle",
+                "Down",
+                "nil",
+                1
                 },
-                --9
                 {
-                        "Trim Inter Switch",
-                        "ON",
-                        "nil",
-                        1
+                "Trim Inter Switch",
+                "Normal",
+                "nil",
+                1
                 },
-                --10
                 {
-                        "Flap Inter Switch" ,
-                        "ON",
-                        "nil",
-                        1
+                "Flap Inter Switch",
+                "Normal",
+                "nil",
+                1
                 },
-                --11
                 {
-                        "MOR lever" ,
-                        "CHECK QUANTITY",
-                        "nil",
-                        1
+                "MOR Lever",
+                "Off",
+                "nil",
+                1
                 },
-                --12
                 {
-                        "PCL Lever" ,
-                        "IDLE",
-                        "nil",
-                        1
+                "PCL Lever",
+                "Idle",
+                "nil",
+                1
                 },
-                --13
                 {
-                        "Condition Lever" ,
-                        "CUT OFF",
-                        "nil",
-                        1
+                "Condition Lever",
+                "Cut Off",
+                "nil",
+                1
                 },
-                --14
                 {
-                        "Flap Lever",
-                        "0°",
-                        "nil",
-                        1
+                "Flap Lever",
+                "0°",
+                "nil",
+                1
                 },
-                --15
                 {
-                        "Fuel Emerg Shutoff",
-                        "FULL IN",
-                        "nil",
-                        1
+                "Fuel Emerg Shutoff",
+                "Full In",
+                "nil",
+                1
                 },
-                --16
                 {
-                        "ECS Emerg Shutoff",
-                        "FULL IN",
-                        "sim/cockpit2/controls/parking_brake_ratio",
-                        1
+                "ECS Emerg Shutoff",
+                "Full In",
+                "nil",
+                1
                 },
-                --17
                 {
-                        "Pax Oxy Supply",
-                        "OFF",
-                        "sim/cockpit/electrical/avionics_on",
-                        0
+                "Doors/DV Windows",
+                "Closed",
+                "nil",
+                1
                 },
-                --18
                 {
-                        "Oxygen Mask" ,
-                        "DOWN",
-                        "sim/cockpit/switches/gear_handle_status",
-                        1
+                "Battery 1 & 2 Switches",
+                "On",
+                "nil",
+                1
                 },
-                --19
                 {
-                        "Circuit Breakers" ,
-                        "CHECK, OPEN",
-                        "nil",
-                        1
+                "Battery Voltage",
+                ">24V",
+                "nil",
+                1
                 },
-                --20
                 {
-                        "EPS",
-                        "CHECK + ARM",
-                        "nil",
-                        1
+                "Avionics 1",
+                "On",
+                "nil",
+                1
                 },
-                --21
                 {
-                        "Ldg Gear Handle",
-                        "DOWN",
-                        "nil",
-                        1
+                "ATIS",
+                "Received",
+                "nil",
+                1
                 },
-                --22
                 {
-                        "Trim Inter Switch",
-                        "ON",
-                        "nil",
-                        1
+                "Altimeters",
+                "Set",
+                "nil",
+                1
                 },
-                --23
                 {
-                        "Flap Inter Switch" ,
-                        "ON",
-                        "nil",
-                        1
+                "Clearance",
+                "Obtain",
+                "nil",
+                1
                 },
-                --24
                 {
-                        "MOR lever" ,
-                        "CHECK QUANTITY",
-                        "nil",
-                        1
+                "Avionics 1",
+                "Off",
+                "nil",
+                1
                 },
-                --25
                 {
-                        "PCL Lever" ,
-                        "IDLE",
-                        "nil",
-                        1
+                "Beacon/Nav Lights",
+                "On",
+                "nil",
+                1
                 },
-                --26
                 {
-                        "Condition Lever" ,
-                        "CUT OFF",
-                        "nil",
-                        1
+                "Fuel Pumps",
+                "Audio/Visual Check",
+                "nil",
+                1
                 },
-                --27
                 {
-                        "Flap Inter Switch" ,
-                        "ON",
-                        "nil",
-                        1
+                "Lamp",
+                "Checked",
+                "nil",
+                1
                 },
-                --28
                 {
-                        "MOR lever" ,
-                        "CHECK QUANTITY",
-                        "nil",
-                        1
+                "Fire Warning",
+                "Checked",
+                "nil",
+                1
                 },
-                --29
                 {
-                        "PCL Lever" ,
-                        "IDLE",
-                        "nil",
-                        1
+                "EIS",
+                "Checked",
+                "nil",
+                1
                 },
-                --30
                 {
-                        "Condition Lever" ,
-                        "CUT OFF",
-                        "nil",
-                        1
+                "Fuel Contents",
+                "Checked/Set",
+                "nil",
+                1
                 }
         },
         {
-                "Starting(Repeat for second engine)",
-                    {
-                        "Mixture Control",
-                        "FULL RICH",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Propeller Control",
-                        "FULL FORWARD",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttle",
-                        "FULL OPEN",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Fuel Boost Pump Switch",
-                        "HI - until fuel flow peaks then OFF",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttle" ,
-                        "CLOSE, THEN OPEN 1/2 INCH",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Magneto/Start Switch" ,
-                        "START",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttle",
-                        "900 to 1000RPM after start",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Oil Pressure",
-                        "10 PSI WITHIN 30 SECONDS",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Alternator Switch",
-                        "ON",
-                        "nil",
-                         1
-                    },
-                    --
-                    {
-                        "Loadmeters and Voltmeter" ,
-                        "CHECK FOR BATTERY CHARGE",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Voltmeter" ,
-                        "CHECK FOR 28 VOLTS",
-                        "nil",
-                        1
-                    }
-        },
-        {
-                "After start/TAXI",
-                    {
-                        "Avionics",
-                        "ON, AS REQUIRED",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Exterior Lights",
-                        "AS REQUIRED",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Brakes",
-                        "RELEASE AND CHECK",
-                        "nil",
-                        1
-                    },
-        },
-        {
-                "Before Takeoff",
-                    {
-                        "Parking Brake",
-                        "SET",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Seat Belts and Shoulder Harnesses",
-                        "CHECK",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Fuel Boost",
-                        "Pumps OFF (if OAT > 32°C, use LOW pres boost)",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "All Instruments",
-                        "CHECKED",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Fuel Indicators" ,
-                        "QUANTITY INDICATED",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Mixture" ,
-                        "FULL RICH",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Starter Annunciator Light",
-                        "CHECK OFF",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttles",
-                        "2200 RPM",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Propeller",
-                        "EXERCISE",
-                        "nil",
-                         1
-                    },
-                    --
-                    {
-                        "Throttles" ,
-                        "1700 RPM",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Magnetos" ,
-                        "CHECK",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttles",
-                        "1500 RPM",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Propellers",
-                        "CHECK FEATHERING",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttles",
-                        "IDLE (Note RPM)",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttles",
-                        "900 to 1000 RPM",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Electric Trim" ,
-                        "CHECK OPERATION",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Flaps" ,
-                        "CHECK AND SET FOR TAKEOFF",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Flight Controls",
-                        "CHECK",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Elevator Trim",
-                        "Takeoff",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Propeller",
-                        "EXERCISE",
-                        "nil",
-                         1
-                    },
-                    --
-                    {
-                        "Doors and Windows" ,
-                        "CLOSED AND LOCKED",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Parking Brake" ,
-                        "OFF",
-                        "nil",
-                        1
-                    }
-        },
-        {
-            "TAKEOFF",
+                "ENGINE START",
                 {
-                    "Landing Lights",
-                    "ON",
+                    "Prop Area",
+                    "Clear",
                     "nil",
                     1
-                },
-
+                    },
+                    {
+                    "Starter Switch",
+                    "Press 2 Seconds",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Condition Lever >12%Ng",
+                    "Ground Idle",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Oil Pressure",
+                    "Check",
+                    "nil",
+                    1
+                    },
+                    {
+                    "ITT and Ng",
+                    "Monitored",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Engine Instruments",
+                    "Checked",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Gen 1 then Gen 2",
+                    "On",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Inverter",
+                    "Batt or Gen",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Avionics 1 and 2",
+                    "On",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Pax Advisory",
+                    "On",
+                    "nil",
+                    1
+                    },
+                    {
+                    "GPS Flight Plan",
+                    "Set",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Standby Bus",
+                    "OFF",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Air Conditioning",
+                    "As required",
+                    "nil",
+                    1
+                    },
+                    {
+                    "ECS",
+                    "Auto",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Pressurization",
+                    "Set Cruise Alt +500ft",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Flaps",
+                    "Set 15°",
+                    "nil",
+                    1
+                    }
+                    
+        },
+        {
+                "BEFORE TAXI",
                 {
-                    "Tansponder",
+                    "Flaps 15°",
+                    "Checked",
+                    "nil",
+                    1
+                    },
+                    {
+                    "AHRS",
+                    "No Flag",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Autopilot",
+                    "Checked",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Pusher ",
+                    "Test",
+                    "nil",
+                    1
+                    },
+                    {
+                    "CAWS",
+                    "Checked",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Inertial Separator",
+                    "Check Open",
+                    "nil",
+                    1
+                    },
+                    {
+                    "De-Ice",
+                    "Check (if ice)",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Flight Controls",
+                    "Free",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Trim Set",
+                    "+3",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Engine Instruments",
+                    "Checked",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Fuel Quantity",
+                    "Re-check",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Com/Nav",
+                    "Set",
+                    "nil",
+                    1
+                    },
+                    {
+                    "EGPWS/Traffic",
+                    "Checked",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Cabin Pressurization/ECS",
+                    "Checked",
+                    "nil",
+                    1
+                    },
+                    {
+                    "FD/ALT",
+                    "Set",
+                    "nil",
+                    1
+                    }
+        },
+        {
+                "TAXI",
+                {
+                    "Taxi Light",
+                    "On",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Brakes",
+                    "Checked",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Flight Instruments",
+                    "Checked",
+                    "nil",
+                    1
+                    } 
+        },
+        {
+                "BEFORE TAKE OFF",
+                {
+                    "Take-Off Brief",
+                    "Completed",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Taxi/Ldg + Recog Lights",
+                    "On",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Strobes",
+                    "On",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Windshield Heat",
+                    "On",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Probes",
+                    "On",
+                    "nil",
+                    1
+                    },
+                    {
+                    "CAWS",
+                    "Check Clear",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Pressurization/ECS",
+                    "Re-Check",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Flaps set 15°",
+                    "Re-Check",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Condition Lever",
+                    "Flight Idle",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Transponder",
                     "ALT",
                     "nil",
                     1
-                },
-
-                {
-                    "Takeoff Power",
-                    "Full Throttle, 2700 rpm",
-                    "nil",
-                    1
-                },
-
-                {
-                    "Minimum Takeoff Oil Temperature",
-                    "24°C",
-                    "nil",
-                    1
-                },
-
-                {
-                    "Power" ,
-                    "SET TAKEOFF POWER (MIXTURE FULL RICH) BEFORE BRAKE RELEASE",
-                    "nil",
-                    1
-                },
-
-                {
-                    "Airspeed" ,
-                    "ACCELERATE TO AND MANTAIN RECOMMENDED SPEEDS",
-                    "nil",
-                    1
-                },
-
-                {
-                    "Landing Gear",
-                    "RETRACT",
-                    "nil",
-                    1
-                },
-
-                {
-                    "Landing Lights",
-                    "OFF",
-                    "nil",
-                    1
-                },
-
-                {
-                    "Airspeed",
-                    "ESTABLISH DESIRED CLIMB SPEED",
-                    "nil",
-                     1
-                },
-
-                {
-                    "Flaps" ,
-                    "RETRACT",
-                    "nil",
-                    1
-                }
+                    }
         },
         {
-            "CRUISE CLIMB",
+                "AFTER TAKEOFF",
                 {
-                    "Mixture",
-                    "FULL RICH",
+                    "Gear (positive rate)",
+                    "Up",
                     "nil",
                     1
-                },
-
-                {
-                    "Cowl Flaps",
-                    "AS REQUIRED",
+                    },
+                    {
+                    "Yaw Damper",
+                    "On",
                     "nil",
                     1
-                },
-
-                {
-                    "POWER",
-                    "FULL THROTTLE",
+                    },
+                    {
+                    "Taxi/Landing Lights",
+                    "Off",
                     "nil",
                     1
-                },
-
-                {
-                    "Propellers",
-                    "2500 RPM",
+                    },
+                    {
+                    "Flaps >100 KIAS",
+                    "Up",
                     "nil",
                     1
-                },
-
-                {
-                    "Engine Temperatures" ,
-                    "MONITOR",
+                    },
+                    {
+                    "Climb Power Set",
+                    "36.9 @ ~150 KIAS",
                     "nil",
                     1
-                },
-
-                {
-                    "Airspeed" ,
-                    "ACCELERATE TO AND MANTAIN RECOMMENDED SPEEDS",
+                    },
+                    {
+                    "Pressurization",
+                    "Check",
                     "nil",
                     1
-                },
-
-                {
-                    "Fuel Boost Pumps",
-                    "OFF",
-                    "nil",
-                    1
-                }
+                    }
         },
         {
-            "CRUISE",
-                {
-                    "Cowl Flaps",
-                    "CLOSED",
-                    "nil",
-                    1
-                },
-
-                {
-                    "POWER",
-                    "SET",
-                    "nil",
-                    1
-                },
-
-                {
-                    "Fuel Boost Pumps",
-                    "AS REQUIRED",
-                    "nil",
-                    1
-                },
-
-                {
-                    "Mixtures",
-                    "SET USING EGT",
-                    "nil",
-                    1
-                }
-        },
-        {
-            "DESCENT",
+                "TRANSITION",
                 {
                     "Altimeter",
-                    "SET",
+                    "Set 1013",
                     "nil",
                     1
-                },
-
-                {
-                    "Mixture",
-                    "FULL SET",
+                    },
+                    {
+                    "Recog Lights",
+                    "Off",
                     "nil",
                     1
-                },
-
-                {
-                    "Cowl Flaps",
-                    "CLOSED",
+                    },
+                    {
+                    "Inertial Separator",
+                    "Closed (as req)",
                     "nil",
                     1
-                },
-
-                {
-                    "Flaps",
-                    "AS REQUIRED",
+                    },
+                    {
+                    "Pax Advisory",
+                    "On",
                     "nil",
                     1
-                },
-
+                    },
+                    {
+                    "Pressurization",
+                    "Check",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Clearance",
+                    "Obtain",
+                    "nil",
+                    1
+                    }
+        },
+        {
+                "TOP OF CLIMB",
                 {
                     "Power",
-                    "AS REQUIRED",
+                    "Set",
                     "nil",
                     1
-                }
+                    },
+                    {
+                    "Trend Monitor",
+                    "Completed",
+                    "nil",
+                    1
+                    }
         },
         {
-            "LANDING",
+                "BEFORE DESCENT",
                 {
-                    "Seat Belts and Shoulder Harnesses",
-                    "FASTENED",
+                    "ATIS",
+                    "Received",
                     "nil",
                     1
-                },
-
-                {
-                    "Fuel Selector Valves",
-                    "SELECT FULLER TANK",
+                    },
+                    {
+                    "Briefing",
+                    "Completed",
                     "nil",
                     1
-                },
-
-                {
-                    "Fuel Boost Pumps",
-                    "OFF, OR LOW AS PER OAT",
+                    },
+                    {
+                    "Fuel Qty",
+                    "Checked",
                     "nil",
                     1
-                },
-
+                    }
+        },
+        {
+                "TOP OF DESCENT",
                 {
-                    "Cowl Flaps",
-                    "AS REQUIRED",
+                    "Pressurization",
+                    "Set Field Elev + 500ft",
                     "nil",
                     1
-                },
-
+                    }
+        },
+        {
+                "TRANSITION",
                 {
-                    "Mixture Controls",
-                    "FULL RICH",
+                    "Altimeter",
+                    "Set area QNH",
                     "nil",
                     1
-                },
-
-                {
-                    "FLAPS",
-                    "APPROACH (15°) below 152 kts",
+                    },
+                    {
+                    "Recog Lights",
+                    "On",
                     "nil",
                     1
-                },
-
+                    },
+                    {
+                    "Inertial Separator",
+                    "Open (as req)",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Pax Advisory",
+                    "On",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Pressurization",
+                    "Check",
+                    "nil",
+                    1
+                    }
+        },
+        {
+                "APPROACH",
                 {
+                    "Altimeter",
+                    "Check QNH",
+                    "nil",
+                    1
+                    },
+                    {
                     "Landing Gear",
-                    "FULL DOWN below 122 kts",
+                    "Down <177 KIAS",
                     "nil",
                     1
-                },
-
-                {
-                    "Airspeed",
-                    "ESTABLISH NORMAL LANDING APPROACH SPEED",
+                    },
+                    {
+                    "Flaps",
+                    "As required <163 KIAS",
                     "nil",
                     1
-                },
-
-                {
-                    "Propellers",
-                    "HIGH RPM",
+                    },
+                    {
+                    "Taxi/Landing Lights",
+                    "As Required",
                     "nil",
                     1
-                }
+                    },
+                    {
+                    "WX Radar",
+                    "Standby",
+                    "nil",
+                    1
+                    }
         },
         {
-            "BALKED LANDING",
+                "FINAL",
                 {
-                    "Propellers",
-                    "HIGH RPM",
+                    "Runway",
+                    "Clear",
                     "nil",
                     1
-                },
-
-                {
-                    "Power",
-                    "MAXIMUM ALLOWABLE",
+                    },
+                    {
+                    "Final approach",
+                    "100-120 KIAS - 15°",
                     "nil",
                     1
-                },
-
-                {
-                    "Airspeed",
-                    "95 kts",
+                    },
+                    {
+                    "Runway threshold",
+                    "80-100 KIAS - 30° or 40°",
                     "nil",
                     1
-                },
-
-                {
-                    "Flaps",
-                    "UP",
-                    "nil",
-                    1
-                },
-
-                {
+                    },
+                    {
                     "Landing Gear",
-                    "UP",
+                    "3 Green",
                     "nil",
                     1
-                },
-
-                {
-                    "Cowl Flaps",
-                    "AS REQUIRED",
-                    "nil",
-                    1
-                }
-        },
-        {
-            "AFTER LANDING",
-                {
-                    "Landing and Taxi Lights",
-                    "AS REQUIRED",
-                    "nil",
-                    1
-                },
-
-                {
+                    },
+                    {
                     "Flaps",
-                    "UP",
+                    "As Required",
                     "nil",
                     1
-                },
-
-                {
-                    "Trim Tabs",
-                    "SET TO ZERO",
+                    },
+                    {
+                    "Yaw Damper",
+                    "Off",
                     "nil",
                     1
-                },
-
-                {
-                    "Cowl Flaps",
-                    "OPEN",
-                    "nil",
-                    1
-                },
-
-                {
-                    "Fuel Boost Pumps",
-                    "AS REQUIRED",
-                    "nil",
-                    1
-                }
+                    }
         },
         {
-            "SHUTDOWN",
+                "AFTER LANDING",
+                {
+                    "Condition Lever",
+                    "Ground Idle",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Trims",
+                    "Reset to Green",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Flaps",
+                    "Up",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Windshield Heat",
+                    "Off",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Probes",
+                    "Off",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Strobes",
+                    "Off",
+                    "nil",
+                    1
+                    },
+                    {
+                    "Landing/Recog Lights",
+                    "Off",
+                    "nil",
+                    1
+                    }
+        },
+        {
+                "SHUT-DOWN",
                 {
                     "Parking Brake",
-                    "SET",
+                    "On",
                     "nil",
                     1
-                },
-
-                {
-                    "Propellers",
-                    "HIGH RPM",
+                    },
+                    {
+                    "Avionics 1 and 2",
+                    "Off",
                     "nil",
                     1
-                },
-
-                {
-                    "Throttles",
-                    "1000 RPM",
+                    },
+                    {
+                    "Gen 2 then Gen 1",
+                    "Off",
                     "nil",
                     1
-                },
-
-                {
-                    "Fuel Boost Pumps",
-                    "OFF",
+                    },
+                    {
+                    "ECS",
+                    "Off",
                     "nil",
                     1
-                },
-
-                {
-                    "Electrical and Avionics Equipment",
-                    "OFF",
+                    },
+                    {
+                    "Condition Lever",
+                    "Cut-Off",
                     "nil",
                     1
-                },
-
-                {
-                    "Mixture Controls",
-                    "IDLE CUT-OFF",
+                    },
+                    {
+                    "EPS",
+                    "Off",
                     "nil",
                     1
-                },
-
-                {
-                    "Magneto/Start Switches",
-                    "OFF, AFTER ENGINES STOP",
+                    },
+                    {
+                    "Battery Master",
+                    "Off <10%Ng",
                     "nil",
                     1
-                },
-
-                {
-                    "Battery and Alternator Switches",
-                    "OFF",
-                    "nil",
-                    1
-                }
+                    }
         },
+        
     }
 
     clistEmer = {
         {
-            "WHERE IS OTTO",
-                {
-                        "EMERGENCY",
-                        "AAAAAAAAAAAAAAAAAAAAAA",
-                        "nil",
-                        1
+            "REJECTED TAKEOFF (NOT ENGINE RELATED)",
+            {
+                "PCL",
+                "Idle",
+                "nil",
+                1
                 },
-
                 {
-                        "Seat Belts and Shoulder Harnesses",
-                        "FASTEN AND ADJUST",
-                        "nil",
-                        1
+                "Reverse",
+                "As required",
+                "nil",
+                1
                 },
-
                 {
-                        "Parking Brake",
-                        "SET",
-                        "sim/cockpit2/controls/parking_brake_ratio",
-                        1
+                "Braking",
+                "As required",
+                "nil",
+                1
                 },
-
                 {
-                        "All Avionics",
-                        "OFF",
-                        "sim/cockpit/electrical/avionics_on",
-                        0
+                "PCL",
+                "Idle",
+                "nil",
+                1
                 },
-
                 {
-                        "Landing Gear Handle" ,
-                        "DOWN",
-                        "sim/cockpit/switches/gear_handle_status",
-                        1
+                "CONDITION LEVER",
+                "CUT-OFF",
+                "nil",
+                1
                 },
-
                 {
-                        "Cowl Flap Switches" ,
-                        "CHECK, OPEN",
-                        "nil",
-                        1
+                "FUEL EMERG SHUT OFF",
+                "Press latch and pull lever",
+                "nil",
+                1
                 },
-
                 {
-                        "Fuel Selectors",
-                        "CHECK ON",
-                        "nil",
-                        1
+                "MASTER POWER switch",
+                "EMERGENCY OFF",
+                "nil",
+                1
                 },
-
                 {
-                        "All Circuit Breakers, Switches and Equipment Controls",
-                        "CHECK",
-                        "nil",
-                        1
-                },
-
-                {
-                        "Battery Switch",
-                        "ON",
-                        "nil",
-                        1
-                },
-
-                {
-                        "Beacon" ,
-                        "ON",
-                        "nil",
-                        1
-                },
-
-                {
-                        "Fuel Quantity Indicators" ,
-                        "CHECK QUANTITY",
-                        "nil",
-                        1
-                },
-
-                {
-                        "Landing Gear Position Lights" ,
-                        "CHECK",
-                        "nil",
-                        1
-                },
-
-                {
-                        "Emergency Landing Gear Handcrank" ,
-                        "STOWED",
-                        "nil",
-                        1
+                "After the aircraft has stopped",
+                "Evacuate.",
+                "nil",
+                1
                 }
         },
         {
-                "THIS IS A CAR",
-                    {
-                        "Mixture Control",
-                        "FULL RICH",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Propeller Control",
-                        "FULL FORWARD",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttle",
-                        "FULL OPEN",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Fuel Boost Pump Switch",
-                        "HI - until fuel flow peaks then OFF",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttle" ,
-                        "CLOSE, THEN OPEN 1/2 INCH",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Magneto/Start Switch" ,
-                        "START",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttle",
-                        "900 to 1000RPM after start",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Oil Pressure",
-                        "10 PSI WITHIN 30 SECONDS",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Alternator Switch",
-                        "ON",
-                        "nil",
-                         1
-                    },
-                    --
-                    {
-                        "Loadmeters and Voltmeter" ,
-                        "CHECK FOR BATTERY CHARGE",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Voltmeter" ,
-                        "CHECK FOR 28 VOLTS",
-                        "nil",
-                        1
-                    }
+            "ENGINE FAILURE BEFORE ROTATION",
+            {
+                "PCL",
+                "Idle",
+                "nil",
+                1
+                },
+                {
+                "Braking",
+                "As required",
+                "nil",
+                1
+                },
+                {
+                "CONDITION LEVER",
+                "CUT-OFF",
+                "nil",
+                1
+                },
+                {
+                "FUEL EMERG SHUT OFF",
+                "Press latch and pull lever",
+                "nil",
+                1
+                },
+                {
+                "MASTER POWER switch",
+                "EMERGENCY OFF",
+                "nil",
+                1
+                },
+                {
+                "After the aircraft has stopped",
+                "Evacuate.",
+                "nil",
+                1
+                }
         },
         {
-                "NO WINGS",
-                    {
-                        "Avionics",
-                        "ON, AS REQUIRED",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Exterior Lights",
-                        "AS REQUIRED",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Brakes",
-                        "RELEASE AND CHECK",
-                        "nil",
-                        1
-                    },
+            "ENGINE FAILURE AFTER ROTATION - LANDING GEAR DOWN",
+            {
+                "Flaps",
+                "40",
+                "nil",
+                1
+                },
+                {
+                "Final Approach Speed",
+                "84 KIAS",
+                "nil",
+                1
+                },
+                {
+                "PCL",
+                "Idle",
+                "nil",
+                1
+                },
+                {
+                "CONDITION LEVER",
+                "CUT-OFF",
+                "nil",
+                1
+                },
+                {
+                "FUEL EMERG SHUT OFF",
+                "Press latch and pull lever",
+                "nil",
+                1
+                },
+                {
+                "MASTER POWER switch",
+                "EMERGENCY OFF",
+                "nil",
+                1
+                },
+                {
+                "After the aircraft has stopped",
+                "Evacuate.",
+                "nil",
+                1
+                }
         },
         {
-                "BURNING",
-                    {
-                        "Parking Brake",
-                        "SET",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Seat Belts and Shoulder Harnesses",
-                        "CHECK",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Fuel Boost",
-                        "Pumps OFF (if OAT > 32°C, use LOW pres boost)",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "All Instruments",
-                        "CHECKED",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Fuel Indicators" ,
-                        "QUANTITY INDICATED",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Mixture" ,
-                        "FULL RICH",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Starter Annunciator Light",
-                        "CHECK OFF",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttles",
-                        "2200 RPM",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Propeller",
-                        "EXERCISE",
-                        "nil",
-                         1
-                    },
-                    --
-                    {
-                        "Throttles" ,
-                        "1700 RPM",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Magnetos" ,
-                        "CHECK",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttles",
-                        "1500 RPM",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Propellers",
-                        "CHECK FEATHERING",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttles",
-                        "IDLE (Note RPM)",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Throttles",
-                        "900 to 1000 RPM",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Electric Trim" ,
-                        "CHECK OPERATION",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Flaps" ,
-                        "CHECK AND SET FOR TAKEOFF",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Flight Controls",
-                        "CHECK",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Elevator Trim",
-                        "Takeoff",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Propeller",
-                        "EXERCISE",
-                        "nil",
-                         1
-                    },
-                    --
-                    {
-                        "Doors and Windows" ,
-                        "CLOSED AND LOCKED",
-                        "nil",
-                        1
-                    },
-                    --
-                    {
-                        "Parking Brake" ,
-                        "OFF",
-                        "nil",
-                        1
-                    }
+            "ENGINE FAILURE AFTER ROTATION - LANDING GEAR UP",
+            {
+                "Landing Gear",
+                "DOWN",
+                "nil",
+                1
+                },
+                {
+                "NON ESS OVRD switch",
+                "NON ESS OVRD (Overhead Panel)",
+                "nil",
+                1
+                },
+                {
+                "Flaps",
+                "40°",
+                "nil",
+                1
+                },
+                {
+                "Final Approach Speed",
+                "98 KIAS Flaps 15°",
+                "nil",
+                1
+                },
+                {
+                "Final Approach Speed",
+                "84 KIAS Flaps 40°",
+                "nil",
+                1
+                },
+                {
+                "PCL",
+                "Idle",
+                "nil",
+                1
+                },
+                {
+                "CONDITION LEVER",
+                "CUT-OFF",
+                "nil",
+                1
+                },
+                {
+                "FUEL EMERG SHUT OFF",
+                "Press latch and pull lever",
+                "nil",
+                1
+                },
+                {
+                "MASTER POWER switch",
+                "EMERGENCY OFF",
+                "nil",
+                1
+                }
         },
         {
-            "AAAAAAAH",
-                {
-                    "Avionics",
-                    "ON, AS REQUIRED",
-                    "nil",
-                    1
+            "ENGINE FAILURE IN FLIGHT - PARTIAL POWER LOSS 1/2",
+            {
+                "PCL",
+                "Idle",
+                "nil",
+                1
                 },
-
                 {
-                    "Exterior Lights",
-                    "AS REQUIRED",
-                    "nil",
-                    1
+                "Manual Override Lever",
+                "Move slowly forward until engine responds",
+                "nil",
+                1
                 },
-
                 {
-                    "Brakes",
-                    "RELEASE AND CHECK",
-                    "nil",
-                    1
+                "Manual Override Lever",
+                "Retard and move very slowly forward",
+                "nil",
+                1
                 },
-    }
+                {
+                "STARTER switch",
+                "Push for 2 seconds",
+                "nil",
+                1
+                }
+        },
+        {
+            "ENGINE FAILURE IN FLIGHT - PARTIAL POWER LOSS 2/2",
+            {
+                "Manual Override Lever",
+                "Move forward to required power (Ng > 80%)",
+                "nil",
+                1
+                },
+                {
+                "Land",
+                "as soon as practical.",
+                "nil",
+                1
+                }
+        },
+        {
+            "ENGINE FAILURE IN FLIGHT - TOTAL POWER LOSS",
+            {
+                "PCL",
+                "Idle",
+                "nil",
+                1
+                },
+                {
+                "CONDITION LEVER",
+                "CUT-OFF",
+                "nil",
+                1
+                },
+                {
+                "Remaining fuel",
+                "Check",
+                "nil",
+                1
+                }
+        }
     }

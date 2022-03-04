@@ -12,8 +12,34 @@ local pages = globalProperty("Maximus1/tablet/checklistNumPages")
 local clistNr = globalProperty("Maximus1/tablet/checklistId")
 local btn = globalProperty("Maximus1/tablet/buttonClicked")
 local numPages = 0
+local panelBrightnes = globalProperty("Maximus1/tablet/panelBrightnes")
+
+local x = get(panelBrightnes)
+
+    col = {
+        white = {1 * x ,1 * x ,1 * x ,1},
+        black = {0.001 * x ,0.001 * x ,0.001 * x ,1},
+        red = {1 * x ,0 * x ,0 * x ,1},
+        green = {0 * x ,1 * x ,0 * x ,1},
+        darkgrey = {0.278 * x ,0.31 * x ,0.349 * x ,1},
+        grey = {0.5 * x ,0.5 * x ,0.5 * x ,1},
+        lightgrey = {0.7 * x ,0.7 * x ,0.7 * x ,1},
+        blue = {0 * x ,0 * x ,1 * x ,1},
+        darkblue = {0 * x ,0.1 * x ,0.15 * x ,1}
+    }
 
 function update()
+    col = {
+        white = {1 * x ,1 * x ,1 * x ,1},
+        black = {0.001 * x ,0.001 * x ,0.001 * x ,1},
+        red = {1 * x ,0 * x ,0 * x ,1},
+        green = {0 * x ,1 * x ,0 * x ,1},
+        darkgrey = {0.278 * x ,0.31 * x ,0.349 * x ,1},
+        grey = {0.5 * x ,0.5 * x ,0.5 * x ,1},
+        lightgrey = {0.7 * x ,0.7 * x ,0.7 * x ,1},
+        blue = {0 * x ,0 * x ,1 * x ,1},
+        darkblue = {0 * x ,0.1 * x ,0.15 * x ,1}
+    }
     
     if get(clistNr) > 0 then
         if get(checklistPage) == 0 then
