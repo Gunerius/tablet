@@ -5,7 +5,7 @@ defineProperty("checklistPagination", 0)
 local startY = 380
 local CONST_resetStartY = startY
 local startX = 60
-local CONST_numInComponents = 7
+local CONST_numInComponents = 8
 local lineWidth = {1,1,1}
 local n = 1
 
@@ -236,8 +236,7 @@ components = {
             height = 32 ,
             shape = sasl.gl.loadImage ("mc_button.png"),
             hideOSCursor = true
-            } 
-    
+            }
     },
     buttonChecklistPage{
         position    = {330, 425, 150, 30},
@@ -291,22 +290,6 @@ components = {
     
     },
     buttonChecklist{
-        position    = {700, 10, 75, 30},
-        size        = {75, 30},
-        buttonName = "NEXT",
-        chkListNr   = 0,
-        isBold      = true,
-        fontSize    = 24,
-        cursor = {
-            x = -16 ,
-            y = -16 ,
-            width = 32 ,
-            height = 32 ,
-            shape = sasl.gl.loadImage ("mc_button.png"),
-            hideOSCursor = true
-            }
-    },
-    buttonChecklist{
         position    = {600, 10, 75, 30},
         size        = {75, 30},
         buttonName = "PREV",
@@ -322,6 +305,23 @@ components = {
             hideOSCursor = true
             }
     },
+    buttonChecklist{
+        position    = {700, 10, 75, 30},
+        size        = {75, 30},
+        buttonName = "NEXT",
+        chkListNr   = 0,
+        isBold      = true,
+        fontSize    = 24,
+        cursor = {
+            x = -16 ,
+            y = -16 ,
+            width = 32 ,
+            height = 32 ,
+            shape = sasl.gl.loadImage ("mc_button.png"),
+            hideOSCursor = true
+            }
+    },
+    
     
 }
 

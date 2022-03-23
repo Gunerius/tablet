@@ -1,28 +1,62 @@
-[REP TABLET BY MAXIMUS1 INFO]: Initializing...
-[REP TABLET BY MAXIMUS1 INFO]: Path to module: D:\sim2/X-Plane 11/Aircraft/Carenado PC12_v1.3/plugins/Tablet(SASL)/data/modules/main.lua
-[REP TABLET BY MAXIMUS1 INFO]: Loading module...
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	module
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: including	pc12.lua
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	tablet
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	repmenu
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonRepMenu
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	topbar
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	xpmenu
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	checkbox
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	xpControlsSlider
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	slider
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	checklistMenu
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	checklistActivate
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonChecklistPage
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonChecklist
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	menu
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	bg
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonRep
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonAvitab
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	buttonXpSettings
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	dropdown
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	dropdownControlsSlider
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	sliderDropdown
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	interactive
-[REP TABLET BY MAXIMUS1 INFO]: Module loaded
-[REP TABLET BY MAXIMUS1 INFO]: [LUA]: loading	drawChecklist
+[TABLET_BY_MAXIMUS1 INFO]: Initializing...
+[TABLET_BY_MAXIMUS1 INFO]: Path to module: D:\sim2/X-Plane 11/Aircraft/Carenado PC12_v1.3/plugins/Tablet(SASL)/data/modules/main.lua
+[TABLET_BY_MAXIMUS1 INFO]: Loading module...
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	module
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: including	pc12.lua
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	tablet
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	repmenu
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	buttonRepMenu
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	topbar
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	simbriefmenu
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: including	simbriefVariables.lua
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: including	simbriefFunc.lua
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: including	downloadFunc.lua
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	btnSimbrief
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	scrollFunc
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	xpmenu
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	checkbox
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	xpControlsSlider
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	slider
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	checklistMenu
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	checklistActivate
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	buttonChecklistPage
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	buttonChecklist
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	settingsMenu
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	checkboxSettings
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	btnSettings
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	menu
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	bg
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	buttonRep
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	buttonXpSettings
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	buttonSettings
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	keyboard
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	buttonSimbrief
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	buttonAvitab
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	dropdown
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	dropdownControlsSlider
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	sliderDropdown
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: loading	interactive
+[TABLET_BY_MAXIMUS1 INFO]: Module loaded
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	true
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	7
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	7
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	7
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	7
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	7
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	K
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	7
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	7
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	K
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	L
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	7
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	7
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	K
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	L
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	E
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	false
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	true
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	false
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	true
+[TABLET_BY_MAXIMUS1 INFO]: [LUA]: "tablet"	false
+[TABLET_BY_MAXIMUS1 INFO]: Disabling...
+[TABLET_BY_MAXIMUS1 INFO]: SASL plugin stopped...

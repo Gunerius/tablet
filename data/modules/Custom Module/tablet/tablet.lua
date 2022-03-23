@@ -4,27 +4,55 @@ createGlobalPropertyi("Maximus1/tablet/page", 0, false, true, false)
 createGlobalPropertyi("Maximus1/tablet/checklist_page", 0, false, true, false)
 createGlobalPropertyi("Maximus1/tablet/checklistId", 0, false, true, false)
 createGlobalPropertyi("Maximus1/tablet/buttonClicked", 1, false, true, false)
-createGlobalPropertyi("Maximus1/tablet/autoCheck", 1, false, true, false)
+createGlobalPropertyi("Maximus1/tablet/autoCheck", stngs.checklist.active, false, true, false)
 createGlobalPropertyf("Maximus1/tablet/panelBrightnes", 1, false, true, false)
 createGlobalPropertyi("Maximus1/tablet/checklistNumPages", 1, false, true, false)
+createGlobalPropertyi("Maximus1/tablet/download", 0, false, true, false)
+createGlobalPropertyi("Maximus1/tablet/simBrief", stngs.apps.simbrief.installed, false, true, false)
+createGlobalPropertyi("Maximus1/tablet/avitab", stngs.apps.avitab.installed, false, true, false)
+createGlobalPropertyi("Maximus1/tablet/rep", 0, false, true, false)
+createGlobalPropertyi("Maximus1/tablet/showKeyb", 0, false, true, false)
 
 
 checklistPage = globalProperty("Maximus1/tablet/checklist_page") -- Normal, emergency, references
 checklistId = globalProperty("Maximus1/tablet/checklistId") -- Corresponds to table in b58.lua, pc12.lua etc
-tabletApp = globalProperty("Maximus1/tablet/page")
-panelBrightnes = globalProperty("Maximus1/tablet/panelBrightnes")
-autoCheck = globalProperty("Maximus1/tablet/autoCheck")
+tabletApp = globalProperty("Maximus1/tablet/page") -- What is the current active app
+panelBrightnes = globalProperty("Maximus1/tablet/panelBrightnes") -- duh
+autoCheck = globalProperty("Maximus1/tablet/autoCheck") -- if == 1 checklists are automaticly checked
+downloadOfp = globalProperty("Maximus1/tablet/download") -- 1 indicates OFP is being downloaded
+timer = globalProperty("sim/time/total_running_time_sec")
+appSimbrief = globalProperty("Maximus1/tablet/simBrief") -- 1 indicates the app is installed
+appAvitab = globalProperty("Maximus1/tablet/avitab") -- 1 indicates the app is installed
+appRep = globalProperty("Maximus1/tablet/rep") -- 1 indicates the app is installed
+showKeyb = globalProperty("Maximus1/tablet/showKeyb") -- 1 indicates the app is installed
 
-defineProperty("showDropDown", false)
+defineProperty("showDropDown", false) --
+defineProperty("userName", "none") --simBrief username
+
+
+charInput = {}
+
+function keybInput(x)
+    table.insert(charInput, #charInput + 1, x)
+    for i = 1, #charInput, 1 do
+        print(charInput[i])
+    end
+end
 
 --tabletApp 1 = Rep menu
 --tabletApp 2 = XP setting
 --tabletApp 3 = Checklist
+--tabletApp 4 = simbrief
+--tabletApp 5 = settings
+
+
 home = globalProperty("Maximus1/tablet/homescreen")
 btnClicked = globalProperty("Maximus1/tablet/buttonClicked") -- Checks if button is clicked. Used for drawing in checklists.
 avitab = globalProperty("avitab/panel_enabled") -- to start Avitab
 
 font1 = sasl.gl.loadFont ("Roboto-Regular.ttf")
+font2 = sasl.gl.loadFont ("RedHatMono-Regular.ttf")
+font3 = sasl.gl.loadFont ("RedHatMono-SemiBold.ttf")
 
 
 --[[ col = {
@@ -70,11 +98,19 @@ components = {
         position    = {0, 0, 800, 480},
         size        = {800, 480}
                     },
+    simbriefmenu    {
+        position    = {0, 0, 800, 480},
+        size        = {800, 480}
+                    },
     xpmenu          {
         position    = {0, 0, 800, 480},
         size        = {800, 480}
                     },
     checklistMenu   {
+        position    = {0, 0, 800, 480},
+        size        = {800, 480}
+                    },
+    settingsMenu   {
         position    = {0, 0, 800, 480},
         size        = {800, 480}
                     },
@@ -104,3 +140,16 @@ components = {
         end
     }
 }
+
+--[[ table.insert(components, 1, checklistMenu   {
+    position    = {0, 0, 800, 480},
+    size        = {800, 480}
+                }) ]]
+
+
+--[[ if stngs.apps.simbrief.installed == "1" then
+    table.insert(components, 1, simbriefmenu    {
+        position    = {0, 0, 800, 480},
+        size        = {800, 480}
+                    })
+end ]]

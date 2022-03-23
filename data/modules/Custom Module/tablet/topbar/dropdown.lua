@@ -1,4 +1,6 @@
-
+function onMouseDown()
+    return true
+end
 
 function update()
     visible = get(showDropDown)
@@ -34,6 +36,21 @@ components = {
         size        = {50, 20},
         btnName     = "Sound ON",
         dref        = "sim/operation/sound/sound_on",
+        textX       = 40,
+        cursor = {
+            x = -16 ,
+            y = -16 ,
+            width = 32 ,
+            height = 32 ,
+            shape = sasl.gl.loadImage ("mc_button.png") ,
+            hideOSCursor = true
+            }
+    },
+    checkbox{
+        position    = {20, 90, 50, 20},
+        size        = {50, 20},
+        btnName     = "Show Keyboard",
+        dref        = "Maximus1/tablet/showKeyb",
         textX       = 40,
         cursor = {
             x = -16 ,

@@ -1,0 +1,14 @@
+{
+    "apps": {
+        "simbrief": {
+            "installed": "1",
+            "userName": "none"
+        },
+        "avitab": {
+            "installed": "1"
+        },
+        "rep": {
+            "installed": "1"
+        }
+    }
+}
