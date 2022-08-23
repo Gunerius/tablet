@@ -8,4 +8,4 @@ Credits:
 iPad 3d model: nhadrian
 iPad background: Simon Berger https://www.pexels.com/@8moments
 
-Support: https://discord.gg/FTQ7nSjMZ4
+
